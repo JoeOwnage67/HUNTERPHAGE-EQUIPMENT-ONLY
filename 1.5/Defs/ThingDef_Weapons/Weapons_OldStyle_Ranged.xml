@@ -19,15 +19,14 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1200</MarketValue>
-      <WorkToMake>45000</WorkToMake>
-      <Mass>8.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>1.0</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.60</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToMake>12000</WorkToMake>
+        <Mass>4</Mass>
+        <AccuracyTouch>0.87</AccuracyTouch>
+        <AccuracyShort>0.83</AccuracyShort>
+        <AccuracyMedium>0.73</AccuracyMedium>
+        <AccuracyLong>0.61</AccuracyLong>
+        <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -42,10 +41,13 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>60</costStuffCount>	
     <costList>
-      <Steel>60</Steel>
       <WoodLog>45</WoodLog>
-      <SimpleComponent>5</SimpleComponent>
+      <SimpleComponent>4</SimpleComponent>
     </costList>
     <verbs>
       <li>
@@ -53,9 +55,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Blunderbuss</defaultProjectile>
         <warmupTime>7</warmupTime>
-        <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <range>15</range>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>1</ticksBetweenBurstShots>-->
+        <range>12</range>
         <soundCast>Shot_Blunderbuss</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -67,7 +69,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -76,7 +78,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -87,6 +89,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+<!-- blunderbuss bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Blunderbuss</defName>
     <label>Flintlock pellet</label>
@@ -97,9 +101,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>7</damageAmountBase>
-      <armorPenetrationBase>0.25</armorPenetrationBase>
-      <stoppingPower>0.9</stoppingPower>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
       <extraDamages>
         <li>
@@ -129,13 +133,13 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <MarketValue>1350</MarketValue>
-      <WorkToMake>45000</WorkToMake>
-      <Mass>11</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>1.0</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -150,10 +154,13 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
     <costList>
-      <Steel>95</Steel>
-      <WoodLog>75</WoodLog>
-      <SimpleComponent>5</SimpleComponent>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
     </costList>
     <verbs>
       <li>
@@ -161,9 +168,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_BlunderbussLongGun</defaultProjectile>
         <warmupTime>7</warmupTime>
-        <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <range>40</range>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>1</ticksBetweenBurstShots>-->
+        <range>18</range>
         <soundCast>Shot_Blunderbuss</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -175,7 +182,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -184,7 +191,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -195,6 +202,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_BlunderbussLongGun</defName>
     <label>Flintlock pellet</label>
@@ -205,9 +214,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>9</damageAmountBase>
-      <armorPenetrationBase>0.30</armorPenetrationBase>
-      <stoppingPower>0.9</stoppingPower>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
       <extraDamages>
         <li>
@@ -236,14 +245,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>900</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>24000</WorkToMake>
       <Mass>7.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -258,11 +266,14 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>80</costStuffCount>	
     <costList>
-      <Steel>60</Steel>
       <WoodLog>30</WoodLog>
-      <SimpleComponent>5</SimpleComponent>
-    </costList>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -271,7 +282,7 @@
         <warmupTime>5</warmupTime>
         <burstShotCount>1</burstShotCount>
         <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
-        <range>25</range>
+        <range>20</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -283,7 +294,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -292,7 +303,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -315,8 +326,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>95</speed>
       <extraDamages>
@@ -351,14 +362,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1000</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>27000</WorkToMake>
       <Mass>9.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -373,20 +383,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
     <costList>
-      <Steel>80</Steel>
-      <WoodLog>65</WoodLog>
-      <SimpleComponent>5</SimpleComponent>
-    </costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_FlintlockLongGun</defaultProjectile>
-        <warmupTime>7</warmupTime>
+        <warmupTime>5</warmupTime>
         <burstShotCount>1</burstShotCount>
         <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
-        <range>50</range>
+        <range>23</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -398,7 +411,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -407,7 +420,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -430,8 +443,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>25</damageAmountBase>
-      <armorPenetrationBase>0.30</armorPenetrationBase>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>95</speed>
       <extraDamages>
@@ -469,13 +482,13 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <MarketValue>1100</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>35000</WorkToMake>
       <Mass>7.0</Mass>
       <AccuracyTouch>1.0</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -490,20 +503,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
     <costList>
-      <Steel>60</Steel>
-      <WoodLog>30</WoodLog>
-      <SimpleComponent>7</SimpleComponent>
-    </costList>
+      <WoodLog>55</WoodLog>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PercussionBasic</defaultProjectile>
-        <warmupTime>5</warmupTime>
+        <warmupTime>4</warmupTime>
         <burstShotCount>1</burstShotCount>
         <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
-        <range>25</range>
+        <range>18</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -515,7 +531,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -524,7 +540,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -547,8 +563,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>25</damageAmountBase>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
       <extraDamages>
@@ -584,13 +600,13 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <MarketValue>1200</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>35000</WorkToMake>
       <Mass>7.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -605,20 +621,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>110</costStuffCount>	
     <costList>
-      <Steel>80</Steel>
       <WoodLog>65</WoodLog>
-      <SimpleComponent>7</SimpleComponent>
-    </costList>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PercussionLongGun</defaultProjectile>
-        <warmupTime>5</warmupTime>
+        <warmupTime>4</warmupTime>
         <burstShotCount>1</burstShotCount>
         <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
-        <range>50</range>
+        <range>21</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -630,7 +649,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -639,7 +658,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -662,8 +681,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>30</damageAmountBase>
-      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
       <extraDamages>
@@ -698,17 +717,15 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1200</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>37000</WorkToMake>
       <Mass>7.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.95</AccuracyMedium>
-      <AccuracyLong>1.50</AccuracyLong>
-      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
     </statBases>
     <equippedStatOffsets>
-      <ShootingAccuracyPawn>50.00</ShootingAccuracyPawn>
     </equippedStatOffsets>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -723,20 +740,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
     <costList>
-      <Steel>95</Steel>
       <WoodLog>65</WoodLog>
-      <SimpleComponent>9</SimpleComponent>
-    </costList>
+      <SimpleComponent>7</SimpleComponent>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PercussionLongGun</defaultProjectile>
-        <warmupTime>5</warmupTime>
+        <warmupTime>4</warmupTime>
         <burstShotCount>1</burstShotCount>
         <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
-        <range>50</range>
+        <range>24</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -748,7 +768,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -757,7 +777,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -789,14 +809,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1100</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>7.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -811,20 +830,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
     <costList>
-      <Steel>60</Steel>
-      <WoodLog>30</WoodLog>
+      <WoodLog>65</WoodLog>
       <SimpleComponent>8</SimpleComponent>
-    </costList>
+    </costList>    
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_RevolverTypeBasic</defaultProjectile>
-        <warmupTime>5</warmupTime>
-        <burstShotCount>5</burstShotCount>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>70</ticksBetweenBurstShots>
-        <range>30</range>
+        <range>18</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -836,7 +858,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -845,7 +867,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -868,8 +890,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>25</damageAmountBase>
-      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
       <extraDamages>
@@ -907,11 +929,11 @@
       <MarketValue>1200</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>7.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
-      <AccuracyMedium>0.90</AccuracyMedium>
-      <AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -926,20 +948,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+      <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
     <costList>
-      <Steel>80</Steel>
       <WoodLog>65</WoodLog>
       <SimpleComponent>8</SimpleComponent>
-    </costList>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_RevolverLongGun</defaultProjectile>
-        <warmupTime>5</warmupTime>
-        <burstShotCount>5</burstShotCount>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>70</ticksBetweenBurstShots>
-        <range>55</range>
+        <range>21</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -951,7 +976,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -960,7 +985,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -983,7 +1008,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>35</damageAmountBase>
+      <damageAmountBase>9</damageAmountBase>
       <armorPenetrationBase>0.60</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>120</speed>
@@ -1026,7 +1051,7 @@
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>1.20</AccuracyMedium>
       <AccuracyLong>1.65</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>50.00</ShootingAccuracyPawn>
@@ -1044,20 +1069,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>130</costStuffCount>	
     <costList>
-      <Steel>95</Steel>
       <WoodLog>65</WoodLog>
       <SimpleComponent>10</SimpleComponent>
-    </costList>
+    </costList>   
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_RevolverLongGun</defaultProjectile>
-        <warmupTime>5</warmupTime>
-        <burstShotCount>5</burstShotCount>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>70</ticksBetweenBurstShots>
-        <range>55</range>
+        <range>24</range>
         <soundCast>Shot_FlintlockCritical</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1069,7 +1097,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1078,7 +1106,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1108,14 +1136,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>950</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>2.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1130,20 +1157,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>80</costStuffCount>	
     <costList>
-      <Steel>45</Steel>
-      <WoodLog>25</WoodLog>
-      <SimpleComponent>4</SimpleComponent>
-    </costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>       
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_RevolverFrontier</defaultProjectile>
-        <warmupTime>4</warmupTime>
-        <burstShotCount>5</burstShotCount>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>45</ticksBetweenBurstShots>
-        <range>25</range>
+        <range>15</range>
         <soundCast>Shot_RevolverFrontier</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1155,7 +1185,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1164,7 +1194,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1187,8 +1217,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>90</speed>
       <extraDamages>
@@ -1231,7 +1261,7 @@
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1246,18 +1276,22 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
     <costList>
-      <Steel>95</Steel>
+      <WoodLog>45</WoodLog>
       <Chemfuel>95</Chemfuel>
       <SimpleComponent>10</SimpleComponent>
-    </costList>
+    </costList>       
     <verbs>
       <li>
         <verbClass>Verb_SpewFire</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>0</warmupTime>
         <range>9.9</range>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
         <burstShotCount>7</burstShotCount>
         <soundCast>Shot_MiniFlameblaster</soundCast>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1269,7 +1303,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1278,7 +1312,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1310,14 +1344,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>950</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>2.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1332,20 +1365,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>75</costStuffCount>	
     <costList>
-      <Steel>45</Steel>
-      <WoodLog>25</WoodLog>
-      <SimpleComponent>5</SimpleComponent>
-    </costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>      
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_SixBarrelz</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>2</warmupTime>
         <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-        <range>25</range>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>15</range>
         <soundCast>Shot_FlintlockStrong</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1357,7 +1393,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1366,7 +1402,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1376,6 +1412,8 @@
     <tradeTags>
       <li>WeaponsOldstyle</li>
     </tradeTags>
+
+  <!-- six barrel bullet -->  
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_SixBarrelz</defName>
@@ -1387,8 +1425,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>45</damageAmountBase>
-      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>100</speed>
       <extraDamages>
@@ -1424,14 +1462,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1000</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>2.5</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1446,20 +1483,23 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>75</costStuffCount>	
     <costList>
-      <Steel>50</Steel>
-      <WoodLog>30</WoodLog>
-      <SimpleComponent>6</SimpleComponent>
-    </costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>        
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_TenBarrelz</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>2</warmupTime>
         <burstShotCount>10</burstShotCount>
-        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-        <range>20</range>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>14</range>
         <soundCast>Shot_FlintlockStrong</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1471,7 +1511,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1480,7 +1520,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1491,6 +1531,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- ten shot bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_TenBarrelz</defName>
     <label>magnum bullet</label>
@@ -1501,8 +1543,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>48</damageAmountBase>
-      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>100</speed>
       <extraDamages>
@@ -1537,14 +1579,13 @@
     </thingSetMakerTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1500</MarketValue>
       <WorkToMake>45000</WorkToMake>
       <Mass>2.0</Mass>
-      <AccuracyTouch>1.0</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1559,11 +1600,14 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
     <costList>
-      <Steel>75</Steel>
-      <WoodLog>25</WoodLog>
-      <SimpleComponent>7</SimpleComponent>
-    </costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>        
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -1571,7 +1615,7 @@
         <defaultProjectile>Bullet_RevolverFrontier</defaultProjectile>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>45</ticksBetweenBurstShots>
-        <range>25</range>
+        <range>15</range>
         <soundCast>Shot_RevolverFrontier</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1583,7 +1627,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1592,7 +1636,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1647,11 +1691,14 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
     <costList>
-      <Steel>95</Steel>
       <WoodLog>65</WoodLog>
       <SimpleComponent>10</SimpleComponent>
-    </costList>
+    </costList>      
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -1660,7 +1707,7 @@
         <warmupTime>5</warmupTime>
         <burstShotCount>7</burstShotCount>
         <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <range>55</range>
+        <range>18</range>
         <soundCast>Shot_Blunderbuss</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
@@ -1672,7 +1719,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -1681,7 +1728,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>4</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -1725,14 +1772,17 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
-    <equippedStatOffsets>
-      <MoveSpeed>-1.2</MoveSpeed>
-    </equippedStatOffsets>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>180</costStuffCount>	
     <costList>
-      <Steel>180</Steel>
       <WoodLog>120</WoodLog>
       <SimpleComponent>20</SimpleComponent>
-    </costList>
+    </costList>        
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>    
     <weaponTags>
       <li>HunterphageHeavyCannon</li>
     </weaponTags>
@@ -1754,9 +1804,9 @@
         <defaultProjectile>Bullet_MarauderCannon</defaultProjectile>
         <forcedMissRadius>2.9</forcedMissRadius>
         <isMortar>true</isMortar>
-        <warmupTime>4.5</warmupTime>
+        <warmupTime>7</warmupTime>
         <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-        <range>50.9</range>
+        <range>18</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Shot_HandHeldCannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1772,7 +1822,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>11.7</power>
+        <power>6</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -1841,13 +1891,17 @@
       </recipeUsers>
     </recipeMaker>
     <equippedStatOffsets>
-      <MoveSpeed>-0.95</MoveSpeed>
+      <MoveSpeed>-0.35</MoveSpeed>
     </equippedStatOffsets>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>180</costStuffCount>	
     <costList>
-      <Steel>170</Steel>
+      <WoodLog>120</WoodLog>
+      <SimpleComponent>20</SimpleComponent>
       <Chemfuel>150</Chemfuel>
-      <SimpleComponent>15</SimpleComponent>
-    </costList>
+    </costList>        
     <weaponTags>
       <li>HunterphageHeavyGatling</li>
     </weaponTags>
@@ -1866,8 +1920,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_MarauderGatling</defaultProjectile>
-        <warmupTime>4.5</warmupTime>
-        <range>35.9</range>
+        <warmupTime>5</warmupTime>
+        <range>18</range>
         <burstShotCount>30</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>Shot_Blunderbuss</soundCast>
@@ -1881,7 +1935,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>11.7</power>
+        <power>6</power>
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
@@ -1901,8 +1955,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>90</speed>
       <extraDamages>

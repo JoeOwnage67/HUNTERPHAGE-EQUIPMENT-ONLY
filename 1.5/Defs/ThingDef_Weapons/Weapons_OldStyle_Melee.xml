@@ -7,7 +7,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_ShadowSaber</defName>
     <label>shadow saber</label>
-    <description>A one-handed saber wielded by the shadow walkers. Both increadibly sharp and easy to use, which allows for more deadly and precise cuts, along with an added bonus of having a chance to inflict armor bane upon melee hit.</description>
+    <description>A one-handed saber wielded by the shadow walkers. Both incredibly sharp and easy to use, which allows for more deadly and precise cuts, along with an added bonus of having a chance to inflict armor bane upon melee hit.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_ShadowWarrior/ShadowBlade</texPath>
@@ -29,8 +29,8 @@
     </costList>
     <statBases>
       <MarketValue>4500</MarketValue>
-      <WorkToMake>50000</WorkToMake>
-      <Mass>0.55</Mass>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1</Mass>
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
@@ -41,24 +41,24 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
-        <cooldownTime>0.5</cooldownTime>
+        <power>4</power>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>15</power>
+        <power>7</power>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>HeartSeekerStabz</def>
-              <amount>15</amount>
+              <amount>2</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <armorPenetration>0.75</armorPenetration>
+        <armorPenetration>0.2</armorPenetration>
         <cooldownTime>0.5</cooldownTime>
         <soundMeleeHit>Impact_Spear</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
@@ -68,17 +68,17 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>25</power>
+        <power>7</power>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>ShadowEdgez</def>
-              <amount>15</amount>
+              <amount>2</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <armorPenetration>0.70</armorPenetration>
-        <cooldownTime>0.5</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1</cooldownTime>
         <soundMeleeHit>Impact_Sword</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
       </li>
@@ -127,8 +127,8 @@
     </costList>
     <statBases>
       <MarketValue>4500</MarketValue>
-      <WorkToMake>50000</WorkToMake>
-      <Mass>0.30</Mass>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1</Mass>
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
@@ -139,25 +139,25 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
-        <cooldownTime>0.3</cooldownTime>
+        <power>4</power>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>13</power>
+        <power>7</power>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>HeartSeekerStabz</def>
-              <amount>15</amount>
+              <amount>2</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <armorPenetration>0.75</armorPenetration>
-        <cooldownTime>0.3</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1</cooldownTime>
         <soundMeleeHit>Impact_Spear</soundMeleeHit>
       </li>
       <li>
@@ -165,17 +165,17 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>10</power>
+        <power>5</power>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>ShadowEdgez</def>
-              <amount>15</amount>
+              <amount>2</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-        <armorPenetration>0.70</armorPenetration>
-        <cooldownTime>0.3</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1</cooldownTime>
         <soundMeleeHit>Impact_Dagger</soundMeleeHit>
       </li>
     </tools>
@@ -201,7 +201,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_ShadowBane</defName>
     <label>shadow bane</label>
-    <description>One of the deadliest weapon wielded by elite shadow walkers. This weapon in particular is designed to take down powerful targets more efficiently than any other melee weapons in the hunters covenant, and all of this was possible due to its ability to inflict armor bane more frequently and superior armor penetration.</description>
+    <description>One of the deadliest weapons wielded by elite shadow walkers. This weapon in particular is designed to take down powerful targets more efficiently than any other melee weapons in the hunters covenant, and all of this was possible due to its ability to inflict armor bane more frequently and superior armor penetration.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_ShadowWarrior/ShadowBane</texPath>
@@ -223,8 +223,8 @@
     </costList>
     <statBases>
       <MarketValue>7500</MarketValue>
-      <WorkToMake>50000</WorkToMake>
-      <Mass>0.60</Mass>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1</Mass>
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
@@ -235,24 +235,24 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
-        <cooldownTime>0.5</cooldownTime>
+        <power>4</power>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>15</power>
+        <power>7</power>
         <extraMeleeDamages>
           <li>
             <def>HeartSeekerStabz</def>
-            <amount>15</amount>
+            <amount>2</amount>
             <chance>0.2</chance>
           </li>
         </extraMeleeDamages>
-        <armorPenetration>1.0</armorPenetration>
-        <cooldownTime>0.5</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1</cooldownTime>
         <soundMeleeHit>Impact_Spear</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
       </li>
@@ -261,16 +261,16 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>25</power>
+        <power>7</power>
         <extraMeleeDamages>
           <li>
             <def>ShadowEdgez</def>
-            <amount>15</amount>
+            <amount>2</amount>
             <chance>0.2</chance>
           </li>
         </extraMeleeDamages>
-        <armorPenetration>0.95</armorPenetration>
-        <cooldownTime>0.5</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+        <cooldownTime>1</cooldownTime>
         <soundMeleeHit>Impact_Sword</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
       </li>
@@ -316,13 +316,11 @@
       <li>PowderkegSawBlade</li>
     </weaponTags>
     <costList>
-      <Steel>180</Steel>
-      <Uranium>50</Uranium>
-      <SimpleComponent>20</SimpleComponent>
+      <SimpleComponent>15</SimpleComponent>
     </costList>
     <statBases>
       <MarketValue>4500</MarketValue>
-      <WorkToMake>50000</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <Mass>2.0</Mass>
     </statBases>
     <equippedStatOffsets>
@@ -335,7 +333,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>4</power>
         <cooldownTime>1.2</cooldownTime>
       </li>
       <li>
@@ -343,8 +341,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>50</power>
-        <armorPenetration>0.80</armorPenetration>
+        <power>9</power>
+        <armorPenetration>0.3</armorPenetration>
         <cooldownTime>1.5</cooldownTime>
         <soundMeleeHit>Impact_HeavySawBlade</soundMeleeHit>
         <soundMeleeMiss>Miss_GreatSword</soundMeleeMiss>
@@ -363,6 +361,10 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>85</costStuffCount>
     <tradeTags>
       <li>WeaponsOldstyleMelee</li>
     </tradeTags>
@@ -389,9 +391,7 @@
       <li>PowderkegPizzaCutter</li>
     </weaponTags>
     <costList>
-      <Steel>200</Steel>
-      <Uranium>60</Uranium>
-      <SimpleComponent>20</SimpleComponent>
+      <SimpleComponent>15</SimpleComponent>
     </costList>
     <statBases>
       <MarketValue>4500</MarketValue>
@@ -447,6 +447,10 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>85</costStuffCount>
     <tradeTags>
       <li>WeaponsOldstyleMelee</li>
     </tradeTags>
@@ -473,13 +477,11 @@
       <li>PowderkegRipperSaber</li>
     </weaponTags>
     <costList>
-      <Steel>145</Steel>
-      <Uranium>35</Uranium>
-      <SimpleComponent>15</SimpleComponent>
+      <SimpleComponent>10</SimpleComponent>
     </costList>
     <statBases>
       <MarketValue>3500</MarketValue>
-      <WorkToMake>50000</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <Mass>1.20</Mass>
     </statBases>
     <equippedStatOffsets>
@@ -492,7 +494,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>4</power>
         <cooldownTime>1.2</cooldownTime>
       </li>
       <li>
@@ -500,8 +502,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>45</power>
-        <armorPenetration>0.70</armorPenetration>
+        <power>8</power>
+        <armorPenetration>0.3</armorPenetration>
         <cooldownTime>1.4</cooldownTime>
         <soundMeleeHit>Impact_HeavySawBlade</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
@@ -520,16 +522,20 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>65</costStuffCount>
     <tradeTags>
       <li>WeaponsOldstyleMelee</li>
     </tradeTags>
   </ThingDef>
-  
+
   <!-- Ripper Sword -->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_RipperSword</defName>
     <label>ripper sword</label>
-    <description>A one-handed sword with a modified vibrating ripper saw blades.</description>
+    <description>A one-handed sword with a modified vibrating ripper saw blade.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_RipperBlades/RipperSword</texPath>
@@ -546,9 +552,7 @@
       <li>PowderkegRipperSword</li>
     </weaponTags>
     <costList>
-      <Steel>150</Steel>
-      <Uranium>40</Uranium>
-      <SimpleComponent>17</SimpleComponent>
+      <SimpleComponent>10</SimpleComponent>
     </costList>
     <statBases>
       <MarketValue>3900</MarketValue>
@@ -565,7 +569,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>4</power>
         <cooldownTime>1.2</cooldownTime>
       </li>
       <li>
@@ -573,8 +577,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>50</power>
-        <armorPenetration>0.70</armorPenetration>
+        <power>8</power>
+        <armorPenetration>0.3</armorPenetration>
         <cooldownTime>1.7</cooldownTime>
         <soundMeleeHit>Impact_HeavySawBlade</soundMeleeHit>
         <soundMeleeMiss>Miss_Sword</soundMeleeMiss>
@@ -593,6 +597,10 @@
         <li>HunterWorkbench</li>
       </recipeUsers>
     </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>65</costStuffCount>
     <tradeTags>
       <li>WeaponsOldstyleMelee</li>
     </tradeTags>
