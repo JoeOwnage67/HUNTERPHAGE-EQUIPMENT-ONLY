@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+        <li>Sounds</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mods/DankPyon.Medieval.Overhaul</li>		
+	</v1.5>
+
+</loadFolders>

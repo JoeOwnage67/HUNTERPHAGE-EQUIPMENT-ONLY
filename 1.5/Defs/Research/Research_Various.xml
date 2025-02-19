@@ -5,15 +5,20 @@
     <defName>HuntersWorkshop</defName>
     <label>Hunters Workshop</label>
   </ResearchTabDef>
+
   <!-- Research Projects -->
+
+  <!-- MEDIEVAL -->
+
   <ResearchProjectDef>
-    <defName>BasicHunterArmaments</defName>
+    <defName>HunterGearCrafting</defName>
     <label>hunter's workbench</label>
-    <techLevel>Industrial</techLevel>
-    <description>An introductory research which allows you to build a hunters workbench, and craft simple components.</description>
+    <techLevel>Medieval</techLevel>
+    <description>An introductory research which allows you to build a hunters workbench, and craft daedalus components.</description>
     <baseCost>1000</baseCost>
     <prerequisites>
       <li>Smithing</li>
+      <li>PlateArmor</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
@@ -21,14 +26,83 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>FlintlockArmaments</defName>
-    <label>flintlock armaments</label>
-    <techLevel>Industrial</techLevel>
-    <description>Research a way to craft basic flintlock firearms.</description>
+
+    <ResearchProjectDef>
+    <defName>HuntersApparel</defName>
+    <label>hunter's apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture hunter-based apparels.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
-      <li>BasicHunterArmaments</li>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+   <ResearchProjectDef>
+    <defName>PowderkegApparels</defName>
+    <label>elite hunter's apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture some apparels worn by the powder keg hunters.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ShadowWalkerApparels</defName>
+    <label>shadow walker's apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture apparels worn by the mysterious shadow walkers.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ShadowBlades</defName>
+    <label>shadow blades</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture some melee weapons used by the shadow walkers.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>ShadowWalkerGear</li>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+
+<!-- INDUSTRIAL -->
+
+ <ResearchProjectDef>
+    <defName>HunterArmamentsCrafting</defName>
+    <label>hunter armaments crafting</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research methods of crafting rudimentary firearms.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+      <li>Machining</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
@@ -36,6 +110,23 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FlintlockArmaments</defName>
+    <label>flintlock armaments</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft basic flintlock firearms.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterArmamentsCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>PercussionArmaments</defName>
     <label>percussion armaments</label>
@@ -44,13 +135,15 @@
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>FlintlockArmaments</li>
+      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>3.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>RevolverArmaments</defName>
     <label>revolver armaments</label>
@@ -59,14 +152,15 @@
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>PercussionArmaments</li>
-      <li>Gunsmithing</li>
+      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>3.00</researchViewX>
+    <researchViewX>4.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>Flamer</defName>
     <label>hand-held flamers</label>
@@ -76,6 +170,7 @@
     <prerequisites>
       <li>BiofuelRefining</li>
       <li>Gunsmithing</li>
+      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
@@ -83,6 +178,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>ExoticWeaponry</defName>
     <label>exotic weaponry</label>
@@ -90,7 +186,8 @@
     <description>Research a way to craft some bizarre-looking firearms that are more effective in combat than they look.</description>
     <baseCost>2000</baseCost>
     <prerequisites>
-      <li>Flamer</li>
+      <li>Gunsmithing</li>
+      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
@@ -98,6 +195,7 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>HeavyWeaponry</defName>
     <label>heavy weaponry</label>
@@ -105,7 +203,8 @@
     <description>Research a way to craft some devastating heavy weapons used by the powder keg hunters.</description>
     <baseCost>2500</baseCost>
     <prerequisites>
-      <li>ExoticWeaponry</li>
+      <li>Gunsmithing</li>
+      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
@@ -113,22 +212,26 @@
     <researchViewX>2.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
-    <defName>HuntersApparel</defName>
-    <label>hunter's apparel</label>
-    <techLevel>Medieval</techLevel>
-    <description>Research a way to manufacture hunter-based apparels.</description>
+    <defName>RipperBlades</defName>
+    <label>ripper blades</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to manufacture some deadly ripper-type melee weapons.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
-      <li>ComplexClothing</li>
+      <li>HunterArmamentsCrafting</li>
+      <li>LongBlades</li>
+      <li>Batteries</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
-  <ResearchProjectDef>
+
+  <!--<ResearchProjectDef>
     <defName>HuntersApparelBlack</defName>
     <label>black hunter's apparel</label>
     <techLevel>Medieval</techLevel>
@@ -142,37 +245,8 @@
     </requiredResearchFacilities>
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.00</researchViewY>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>PowderkegApparels</defName>
-    <label>powder keg hunter's apparel</label>
-    <techLevel>Medieval</techLevel>
-    <description>Research a way to manufacture some apparels worn by the powder keg hunters.</description>
-    <baseCost>1500</baseCost>
-    <prerequisites>
-      <li>HuntersApparelBlack</li>
-    </prerequisites>
-    <tab>HuntersWorkshop</tab>
-    <requiredResearchFacilities>
-    </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>ShadowWalkerApparels</defName>
-    <label>shadow walkers apparel</label>
-    <techLevel>Medieval</techLevel>
-    <description>Research a way to manufacture apparels worn by the mysterious shadow walkers.</description>
-    <baseCost>2000</baseCost>
-    <prerequisites>
-      <li>PowderkegApparels</li>
-    </prerequisites>
-    <tab>HuntersWorkshop</tab>
-    <requiredResearchFacilities>
-    </requiredResearchFacilities>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
-  </ResearchProjectDef>
+  </ResearchProjectDef>-->
+
   <!--<ResearchProjectDef>
     <defName>BackPacks</defName>
     <label>back packs</label>
@@ -188,7 +262,8 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>-->
-  <ResearchProjectDef>
+
+  <!--<ResearchProjectDef>
     <defName>HunterMelee</defName>
     <label>melee weapons</label>
     <techLevel>Medieval</techLevel>
@@ -202,37 +277,8 @@
     </requiredResearchFacilities>
     <researchViewX>0.00</researchViewX>
     <researchViewY>4.00</researchViewY>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>RipperBlades</defName>
-    <label>ripper blades</label>
-    <techLevel>Industrial</techLevel>
-    <description>Research a way to manufacture some deadly ripper-type melee weapons.</description>
-    <baseCost>1500</baseCost>
-    <prerequisites>
-      <li>HunterMelee</li>
-    </prerequisites>
-    <tab>HuntersWorkshop</tab>
-    <requiredResearchFacilities>
-    </requiredResearchFacilities>
-    <researchViewX>1.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
-  </ResearchProjectDef>
-  <ResearchProjectDef>
-    <defName>ShadowBlades</defName>
-    <label>shadow blades</label>
-    <techLevel>Industrial</techLevel>
-    <description>Research a way to manufacture some melee weapons used by the shadow walkers.</description>
-    <baseCost>2000</baseCost>
-    <prerequisites>
-      <li>RipperBlades</li>
-    </prerequisites>
-    <tab>HuntersWorkshop</tab>
-    <requiredResearchFacilities>
-    </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
-  </ResearchProjectDef>
+  </ResearchProjectDef> -->
+
   <!--<ResearchProjectDef>
     <defName>FrontierDefenses</defName>
     <label>frontier defenses</label>
@@ -248,6 +294,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>BallistaTurret</defName>
     <label>manned ballista turret</label>
@@ -263,6 +310,7 @@
     <researchViewX>1.00</researchViewX>
     <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>CannonTurret</defName>
     <label>manned cannon turret</label>
@@ -278,6 +326,7 @@
     <researchViewX>2.00</researchViewX>
     <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
+
   <ResearchProjectDef>
     <defName>GatlingTurret</defName>
     <label>manned gatling turret</label>
@@ -293,6 +342,7 @@
     <researchViewX>3.00</researchViewX>
     <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>-->
+
   <!--<ResearchProjectDef>
     <defName>Elixirz</defName>
     <label>elixirs</label>
@@ -308,4 +358,5 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>6.00</researchViewY>
   </ResearchProjectDef>-->
+
 </Defs>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Tier 1 Firearms -->
-  <!-- Blunderbuss Basic -->
+
+  <!-- Blunderbuss -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Blunderbuss</defName>
     <label>blunderbuss</label>
@@ -108,6 +109,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Blunderbuss long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_BlunderbussLongGun</defName>
@@ -215,7 +217,8 @@
       </extraDamages>
     </projectile>
   </ThingDef>
-  <!-- Flintlock Basic -->
+
+  <!-- Flintlock Rifle -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_FlintlockRifle</defName>
     <label>flintlock rifle</label>
@@ -300,6 +303,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+<!-- flintlock bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_FlintlockBasic</defName>
     <label>flintlock bullet</label>
@@ -327,6 +332,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Flintlock long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_FlintlockLongGun</defName>
@@ -412,6 +418,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- flintlock long gun bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_FlintlockLongGun</defName>
     <label>flintlock bullet</label>
@@ -439,7 +447,9 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Tier 2 Firearms -->
+
   <!-- Percussion Basic -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_PercussionRifle</defName>
@@ -525,6 +535,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- percussion bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_PercussionBasic</defName>
     <label>sharp bullet</label>
@@ -552,6 +564,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Percussion long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_PercussionLongGun</defName>
@@ -637,6 +650,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- percussion bullet long gun -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_PercussionLongGun</defName>
     <label>sharp bullet</label>
@@ -664,6 +679,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Percussion scoped long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_ScopedPercussionLongGun</defName>
@@ -752,7 +768,9 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
   <!-- Tier 3 Firearms -->
+
   <!-- Revolver rifle basic -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RevolvingRifle</defName>
@@ -838,6 +856,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- revolver bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_RevolverTypeBasic</defName>
     <label>sharp bullet</label>
@@ -865,6 +885,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Revolver long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_RevolvingLongGun</defName>
@@ -950,6 +971,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- revolver long gun bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_RevolverLongGun</defName>
     <label>sharp bullet</label>
@@ -977,6 +1000,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Revolving scoped long gun -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_ScopedRevolvingLongGun</defName>
@@ -1065,6 +1089,7 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
   <!-- Frontier revolver -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_FrontierRevolver</defName>
@@ -1150,6 +1175,8 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
+  <!-- bullet frontier -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_RevolverFrontier</defName>
     <label>revolver bullet</label>
@@ -1177,6 +1204,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Flame sprayer -->
   <!-- Hunters flame sprayer -->
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -1261,7 +1289,9 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
   <!-- Exotic Weapons -->
+
   <!-- 6 Barrel Magnum -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_SixBarrelMagnum</defName>
@@ -1374,6 +1404,8 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
+
   <!-- turret Magnum -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_TurretMagnum</defName>
@@ -1486,6 +1518,7 @@
       </extraDamages>
     </projectile>
   </ThingDef>
+
   <!-- Enouy Revolver -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_EnouyRevolver</defName>
@@ -1570,6 +1603,7 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
   <!-- Volley Rifle -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_VolleyRifle</defName>
@@ -1658,6 +1692,7 @@
       <li>WeaponsOldstyle</li>
     </tradeTags>
   </ThingDef>
+
   <!-- Heavy Weapons : Ranged -->
   <ThingDef ParentName="BaseGun">
     <defName>Gun_MarauderCannon</defName>
@@ -1750,6 +1785,8 @@
       <li Class="CompProperties_Biocodable" />
     </comps>
   </ThingDef>
+
+  <!-- marauder bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MarauderCannon</defName>
     <label>cannon ball</label>
@@ -1771,6 +1808,8 @@
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
+
+  <!-- marauder gatling -->
   <ThingDef ParentName="BaseGun">
     <defName>Gun_MarauderGatling</defName>
     <label>marauder gatling gun</label>
@@ -1850,6 +1889,8 @@
       <li Class="CompProperties_Biocodable" />
     </comps>
   </ThingDef>
+
+  <!-- gatling bullet -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MarauderGatling</defName>
     <label>gatling bullet</label>

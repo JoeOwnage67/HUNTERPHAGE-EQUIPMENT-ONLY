@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Shadowblades Research -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "ShadowBlades"]</xpath>
+    <value>
+       <ResearchProjectDef>
+        <defName>ShadowBlades</defName>
+        <label>shadow blades</label>
+        <techLevel>Medieval</techLevel>
+        <description>Research a way to manufacture some melee weapons used by the shadow walkers.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+          <li>ShadowWalkerGear</li>
+          <li>HunterGearCrafting</li>
+          <li>DankPyon_MilitaryBlades</li>
+        </prerequisites>
+        <tab>HuntersWorkshop</tab>
+        <requiredResearchFacilities>
+        </requiredResearchFacilities>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+      </ResearchProjectDef>
+    </value>
+  </Operation>
+
+  <!-- HunterArmamentsCrafting Research-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "HunterArmamentsCrafting"]</xpath>
+    <value>
+      <ResearchProjectDef>
+        <defName>HunterArmamentsCrafting</defName>
+        <label>hunter armaments crafting</label>
+        <techLevel>Medieval</techLevel>
+        <description>Research methods of crafting rudimentary firearms.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+          <li>HunterGearCrafting</li>
+          <li>DankPyon_Gunpowder</li>
+        </prerequisites>
+        <tab>HuntersWorkshop</tab>
+        <requiredResearchFacilities>
+        </requiredResearchFacilities>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+      </ResearchProjectDef>
+    </value>
+  </Operation>
+
+<!-- flintlock armaments research -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "ShadowBlades"]</xpath>
+    <value>
+        <ResearchProjectDef>
+          <defName>FlintlockArmaments</defName>
+          <label>flintlock armaments</label>
+          <techLevel>Medieval</techLevel>
+          <description>Research a way to craft basic flintlock firearms.</description>
+          <baseCost>1500</baseCost>
+          <prerequisites>
+            <li>HunterArmamentsCrafting</li>
+          </prerequisites>
+          <tab>HuntersWorkshop</tab>
+          <requiredResearchFacilities>
+          </requiredResearchFacilities>
+          <researchViewX>2.00</researchViewX>
+          <researchViewY>0.00</researchViewY>
+        </ResearchProjectDef>
+      </value>
+  </Operation>
+
+    <!-- Ripperblades Research-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "RipperBlades"]</xpath>
+    <value>
+        <ResearchProjectDef>
+          <defName>RipperBlades</defName>
+          <label>ripper blades</label>
+          <techLevel>Industrial</techLevel>
+          <description>Research a way to manufacture some deadly ripper-type melee weapons.</description>
+          <baseCost>1500</baseCost>
+          <prerequisites>
+            <li>HunterArmamentsCrafting</li>
+            <li>DankPyon_MilitaryBlades</li>
+            <li>Batteries</li>
+          </prerequisites>
+          <tab>HuntersWorkshop</tab>
+          <requiredResearchFacilities>
+          </requiredResearchFacilities>
+          <researchViewX>1.00</researchViewX>
+          <researchViewY>4.00</researchViewY>
+        </ResearchProjectDef>
+    </value>
+  </Operation>
+
+
+
+</Patch>
