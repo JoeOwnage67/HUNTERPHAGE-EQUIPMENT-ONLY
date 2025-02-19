@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Hunterphage - Equipment Only</name>
+  <packageId>JoeOwnage.HunterphageEquip</packageId>
+  <author>BlackMarket420</author>
+  <url>https://github.com/emipa606/HunterphageXenotype</url>
+
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.Rimworld.Royalty</packageId>
+      <displayName>Rimworld Royalty</displayName>
+      <downloadUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/</downloadUrl>
+    </li>
+    <li>
+      <packageId>Ludeon.Rimworld.Ideology</packageId>
+      <displayName>Rimworld Ideology</displayName>
+      <downloadUrl>https://store.steampowered.com/app/1392840/RimWorld__Ideology/</downloadUrl>
+    </li>
+    <li>
+      <packageId>Ludeon.Rimworld.Biotech</packageId>
+      <displayName>Rimworld Biotech</displayName>
+      <downloadUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</downloadUrl>
+    </li>
+  </modDependencies>
+  
+  <loadAfter>
+    <li>Ludeon.Rimworld.Royalty</li>
+    <li>Ludeon.Rimworld.Ideology</li>
+    <li>Ludeon.Rimworld.Biotech</li>
+  </loadAfter>
+
+  <description>Based on BlackMarket420s mod. All art assets and ideas belong to them. https://steamcommunity.com/sharedfiles/filedetails/?id=3030775138</description>
+</ModMetaData>
