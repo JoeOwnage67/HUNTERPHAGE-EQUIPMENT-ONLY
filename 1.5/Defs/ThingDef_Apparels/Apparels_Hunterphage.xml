@@ -308,7 +308,7 @@
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -388,7 +388,7 @@
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1087,7 +1087,7 @@
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1166,7 +1166,7 @@
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1244,7 +1244,7 @@
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1555,7 +1555,7 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1637,7 +1637,7 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <recipeMaker>
-      <researchPrerequisite>ShadowWalkerApparels</researchPrerequisite>
+      <researchPrerequisite>ShadowWalkerGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>

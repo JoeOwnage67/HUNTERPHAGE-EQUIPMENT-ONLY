@@ -60,7 +60,7 @@
   </ResearchProjectDef>
 
     <ResearchProjectDef>
-    <defName>ShadowWalkerApparels</defName>
+    <defName>ShadowWalkerGear</defName>
     <label>shadow walker's apparel</label>
     <techLevel>Medieval</techLevel>
     <description>Research a way to manufacture apparels worn by the mysterious shadow walkers.</description>

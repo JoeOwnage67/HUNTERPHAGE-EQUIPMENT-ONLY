@@ -64,7 +64,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>BasicHunterArmaments</li>
+      <li>HunterGearCrafting</li>
     </researchPrerequisites>
   </ThingDef>
   <WorkGiverDef>
