@@ -38,8 +38,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
    <ResearchProjectDef>
@@ -54,8 +54,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -70,8 +70,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>3.00</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -86,15 +86,13 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
-
-<!-- INDUSTRIAL -->
 
  <ResearchProjectDef>
     <defName>RudimentaryRifling</defName>
-    <label>hunter armaments crafting</label>
+    <label>rudimentary rifling</label>
     <techLevel>Industrial</techLevel>
     <description>Discover the rudimentary principles of rifled barrels, paving the way for crafting early firearms. These weapons offer improved range and damage compared to earlier melee weapons and bows, but lack the precision and firepower of more advanced weapons. A crucial step for any developing colony looking to enhance its defensive capabilities.</description>
     <baseCost>1500</baseCost>
@@ -104,8 +102,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -121,8 +119,10 @@
     <requiredResearchFacilities>
     </requiredResearchFacilities>
     <researchViewX>2.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
+
+  <!-- INDUSTRIAL -->
 
   <ResearchProjectDef>
     <defName>PercussionArmaments</defName>
@@ -136,7 +136,7 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>3.00</researchViewX>
     <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
@@ -152,8 +152,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>3.00</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -169,8 +169,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>5.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -186,8 +186,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -203,8 +203,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>5.00</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -221,8 +221,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
 
   <!--<ResearchProjectDef>

@@ -19,8 +19,8 @@
         <tab>HuntersWorkshop</tab>
         <requiredResearchFacilities>
         </requiredResearchFacilities>
-        <researchViewX>0.00</researchViewX>
-        <researchViewY>4.00</researchViewY>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
       </ResearchProjectDef>
     </value>
   </Operation>
@@ -42,8 +42,8 @@
         <tab>HuntersWorkshop</tab>
         <requiredResearchFacilities>
         </requiredResearchFacilities>
-        <researchViewX>2.00</researchViewX>
-        <researchViewY>0.00</researchViewY>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
       </ResearchProjectDef>
     </value>
   </Operation>
@@ -64,8 +64,8 @@
           <tab>HuntersWorkshop</tab>
           <requiredResearchFacilities>
           </requiredResearchFacilities>
-          <researchViewX>2.00</researchViewX>
-          <researchViewY>1.00</researchViewY>
+          <researchViewX>1.00</researchViewX>
+          <researchViewY>2.00</researchViewY>
         </ResearchProjectDef>
       </value>
   </Operation>
@@ -88,8 +88,8 @@
           <tab>HuntersWorkshop</tab>
           <requiredResearchFacilities>
           </requiredResearchFacilities>
-          <researchViewX>4.00</researchViewX>
-          <researchViewY>0.00</researchViewY>
+          <researchViewX>0.00</researchViewX>
+          <researchViewY>4.00</researchViewY>
         </ResearchProjectDef>
     </value>
   </Operation>

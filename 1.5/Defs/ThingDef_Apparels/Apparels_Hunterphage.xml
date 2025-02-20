@@ -1084,7 +1084,6 @@
     <defName>Headgear_RogueHood</defName>
     <label>rogue hood</label>
     <description>a dark hood that shrouds the wearer in mystery, offering an air of stealth and secrecy. Ideal for those who prefer to operate in the shadows, it enhances one's ability to blend into the darkness and evade detection.</description>
-    </description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1134,7 +1133,7 @@
       <EquipDelay>1</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <Stealth>0.15</Stealth>
+      <HuntingStealth>0.15</HuntingStealth>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1213,7 +1212,7 @@
       <EquipDelay>1</EquipDelay>		
     </statBases>
     <equippedStatOffsets>
-      <Stealth>0.15</Stealth>
+      <HuntingStealth>0.15</HuntingStealth>
       <SocialImpact>0.15</SocialImpact>	
     </equippedStatOffsets>
     <apparel>
