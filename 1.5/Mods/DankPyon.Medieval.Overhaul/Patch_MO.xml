@@ -19,18 +19,18 @@
         <tab>HuntersWorkshop</tab>
         <requiredResearchFacilities>
         </requiredResearchFacilities>
-        <researchViewX>2.00</researchViewX>
+        <researchViewX>0.00</researchViewX>
         <researchViewY>4.00</researchViewY>
       </ResearchProjectDef>
     </value>
   </Operation>
 
-  <!-- HunterArmamentsCrafting Research-->
+  <!-- RudimentaryRifling Research-->
   <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ResearchProjectDef[defName = "HunterArmamentsCrafting"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName = "RudimentaryRifling"]</xpath>
     <value>
       <ResearchProjectDef>
-        <defName>HunterArmamentsCrafting</defName>
+        <defName>RudimentaryRifling</defName>
         <label>hunter armaments crafting</label>
         <techLevel>Medieval</techLevel>
         <description>Research methods of crafting rudimentary firearms.</description>
@@ -42,7 +42,7 @@
         <tab>HuntersWorkshop</tab>
         <requiredResearchFacilities>
         </requiredResearchFacilities>
-        <researchViewX>1.00</researchViewX>
+        <researchViewX>2.00</researchViewX>
         <researchViewY>0.00</researchViewY>
       </ResearchProjectDef>
     </value>
@@ -50,7 +50,7 @@
 
 <!-- flintlock armaments research -->
   <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ResearchProjectDef[defName = "ShadowBlades"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName = "FlintlockArmaments"]</xpath>
     <value>
         <ResearchProjectDef>
           <defName>FlintlockArmaments</defName>
@@ -59,13 +59,13 @@
           <description>Research a way to craft basic flintlock firearms.</description>
           <baseCost>1500</baseCost>
           <prerequisites>
-            <li>HunterArmamentsCrafting</li>
+            <li>RudimentaryRifling</li>
           </prerequisites>
           <tab>HuntersWorkshop</tab>
           <requiredResearchFacilities>
           </requiredResearchFacilities>
           <researchViewX>2.00</researchViewX>
-          <researchViewY>0.00</researchViewY>
+          <researchViewY>1.00</researchViewY>
         </ResearchProjectDef>
       </value>
   </Operation>
@@ -81,15 +81,15 @@
           <description>Research a way to manufacture some deadly ripper-type melee weapons.</description>
           <baseCost>1500</baseCost>
           <prerequisites>
-            <li>HunterArmamentsCrafting</li>
+            <li>RudimentaryRifling</li>
             <li>DankPyon_MilitaryBlades</li>
             <li>Batteries</li>
           </prerequisites>
           <tab>HuntersWorkshop</tab>
           <requiredResearchFacilities>
           </requiredResearchFacilities>
-          <researchViewX>1.00</researchViewX>
-          <researchViewY>4.00</researchViewY>
+          <researchViewX>4.00</researchViewX>
+          <researchViewY>0.00</researchViewY>
         </ResearchProjectDef>
     </value>
   </Operation>

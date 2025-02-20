@@ -7,7 +7,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_ShadowSaber</defName>
     <label>shadow saber</label>
-    <description>A one-handed saber wielded by the shadow walkers. Both incredibly sharp and easy to use, which allows for more deadly and precise cuts, along with an added bonus of having a chance to inflict armor bane upon melee hit.</description>
+    <description>A one-handed saber wielded by the elusive Shadow Walkers. This weapon boasts exceptional sharpness and effortless handling, enabling its wielder to deliver lethal and precise cuts. Additionally, it possesses the unique ability to inflict 'Armor Bane' upon melee hits, making it a formidable choice for those who strike from the shadows.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_ShadowWarrior/ShadowBlade</texPath>
@@ -105,7 +105,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_ShadowDagger</defName>
     <label>shadow dagger</label>
-    <description>A one-handed dagger wielded by the shadow walkers. Although lacking in damage, it's light and possess better grip, which allows for faster melee hits and increased chance to inflict armor bane in every hit.</description>
+    <description>A one-handed dagger wielded by the elusive Shadow Walkers. While it may lack in raw damage, its lightweight design and superior grip provide unparalleled speed and agility in combat. This allows for rapid melee strikes with an increased chance to inflict 'Armor Bane' on every hit, making it a highly effective weapon for quick, precise attacks.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_ShadowWarrior/ShadowDagger</texPath>
@@ -201,7 +201,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_ShadowBane</defName>
     <label>shadow bane</label>
-    <description>One of the deadliest weapons wielded by elite shadow walkers. This weapon in particular is designed to take down powerful targets more efficiently than any other melee weapons in the hunters covenant, and all of this was possible due to its ability to inflict armor bane more frequently and superior armor penetration.</description>
+    <description>One of the deadliest weapons wielded by elusive Shadow Walkers, this particular weapon is engineered to efficiently take down powerful targets. Its effectiveness is due to its frequent 'Armor Bane' infliction and superior armor penetration, making it an indispensable tool for those who strike from the shadows.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_ShadowWarrior/ShadowBane</texPath>
@@ -299,7 +299,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_HeavySawBlade</defName>
     <label>heavy saw blade</label>
-    <description>A two-handed great chainsaw mainly used by the powder keg hunters. Its saw tips are so sharp that it can rip apart tough flesh and armor with ease, although with an exchange of slight movement penalty.</description>
+    <description>A formidable two-handed great chainsaw. Its saw tips are honed to a razor-sharp edge, allowing it to effortlessly shred through tough flesh and armor. However, this immense power comes with a slight movement penalty, making it a weapon for those who can balance its destructive capabilities with strategic finesse.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/HeavyWeapons/HeavySawBlade</texPath>
@@ -374,7 +374,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_RipperSawBlade</defName>
     <label>ripper saw blade</label>
-    <description>A two-handed saw blade with a giant circular saw. The pizza cutter "circular saw" is so heavy that it takes some effort to swing it, but with the saw revving-up and the power of centrifugal force, the ripper saw blade can deal heavy amounts of damage in a single swing.</description>
+    <description>A fearsome two-handed saw blade with a giant circular 'pizza cutter' saw. Though it demands significant effort to swing due to its immense weight, the revving-up of the saw and the power of centrifugal force enable the ripper saw blade to deliver devastating damage in a single swing.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_RipperBlades/RipperSawBlade</texPath>
@@ -460,7 +460,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_RipperSaber</defName>
     <label>ripper saber</label>
-    <description>A one-handed saber with a modified ripper chainsaw.</description>
+    <description>A versatile one-handed saber equipped with a modified ripper chainsaw. This unique weapon combines the agility of a saber with the raw power of a chainsaw, allowing the user to deliver swift and brutal attacks with ease.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_RipperBlades/RipperSaber</texPath>
@@ -535,7 +535,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Hunterphage_RipperSword</defName>
     <label>ripper sword</label>
-    <description>A one-handed sword with a modified vibrating ripper saw blade.</description>
+    <description>A one-handed sword featuring a modified vibrating ripper saw blade. This innovative weapon merges the precision of a sword with the ferocious cutting power of a saw blade. The vibration feature amplifies its destructive potential, enabling the user to slice through even the toughest materials with remarkable efficiency.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/Melee_RipperBlades/RipperSword</texPath>

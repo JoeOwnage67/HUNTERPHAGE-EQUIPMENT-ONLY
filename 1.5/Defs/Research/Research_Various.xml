@@ -14,10 +14,9 @@
     <defName>HunterGearCrafting</defName>
     <label>hunter's workbench</label>
     <techLevel>Medieval</techLevel>
-    <description>An introductory research which allows you to build a hunters workbench, and craft daedalus components.</description>
+    <description>An introductory research which allows you to build a hunters workbench and craft daedalus components.</description>
     <baseCost>1000</baseCost>
     <prerequisites>
-      <li>Smithing</li>
       <li>PlateArmor</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
@@ -28,7 +27,7 @@
   </ResearchProjectDef>
 
     <ResearchProjectDef>
-    <defName>HuntersApparel</defName>
+    <defName>HunterGear</defName>
     <label>hunter's apparel</label>
     <techLevel>Medieval</techLevel>
     <description>Research a way to manufacture hunter-based apparels.</description>
@@ -40,11 +39,11 @@
     <requiredResearchFacilities>
     </requiredResearchFacilities>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
 
    <ResearchProjectDef>
-    <defName>PowderkegApparels</defName>
+    <defName>EliteHunterGear</defName>
     <label>elite hunter's apparel</label>
     <techLevel>Medieval</techLevel>
     <description>Research a way to manufacture some apparels worn by the powder keg hunters.</description>
@@ -55,7 +54,7 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>0.00</researchViewX>
     <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
@@ -71,8 +70,8 @@
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>2.00</researchViewY>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -83,31 +82,29 @@
     <baseCost>2000</baseCost>
     <prerequisites>
       <li>ShadowWalkerGear</li>
-      <li>HunterGearCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
+    <researchViewX>0.00</researchViewX>
     <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
 
 <!-- INDUSTRIAL -->
 
  <ResearchProjectDef>
-    <defName>HunterArmamentsCrafting</defName>
+    <defName>RudimentaryRifling</defName>
     <label>hunter armaments crafting</label>
     <techLevel>Industrial</techLevel>
-    <description>Research methods of crafting rudimentary firearms.</description>
+    <description>Discover the rudimentary principles of rifled barrels, paving the way for crafting early firearms. These weapons offer improved range and damage compared to earlier melee weapons and bows, but lack the precision and firepower of more advanced weapons. A crucial step for any developing colony looking to enhance its defensive capabilities.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>HunterGearCrafting</li>
-      <li>Machining</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>2.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
@@ -118,13 +115,13 @@
     <description>Research a way to craft basic flintlock firearms.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
-      <li>HunterArmamentsCrafting</li>
+      <li>RudimentaryRifling</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
     <researchViewX>2.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -135,13 +132,12 @@
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>FlintlockArmaments</li>
-      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -152,13 +148,12 @@
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>PercussionArmaments</li>
-      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -169,14 +164,13 @@
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>BiofuelRefining</li>
-      <li>Gunsmithing</li>
-      <li>HunterArmamentsCrafting</li>
+      <li>ExoticWeaponry</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -186,14 +180,14 @@
     <description>Research a way to craft some bizarre-looking firearms that are more effective in combat than they look.</description>
     <baseCost>2000</baseCost>
     <prerequisites>
+      <li>RevolverArmaments</li>
       <li>Gunsmithing</li>
-      <li>HunterArmamentsCrafting</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>1.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -203,14 +197,14 @@
     <description>Research a way to craft some devastating heavy weapons used by the powder keg hunters.</description>
     <baseCost>2500</baseCost>
     <prerequisites>
-      <li>Gunsmithing</li>
-      <li>HunterArmamentsCrafting</li>
+      <li>ExoticWeaponry</li>
+      <li>BiofuelRefining</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -220,15 +214,15 @@
     <description>Research a way to manufacture some deadly ripper-type melee weapons.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
-      <li>HunterArmamentsCrafting</li>
+      <li>RudimentaryRifling</li>
       <li>LongBlades</li>
       <li>Batteries</li>
     </prerequisites>
     <tab>HuntersWorkshop</tab>
     <requiredResearchFacilities>
     </requiredResearchFacilities>
-    <researchViewX>1.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
 
   <!--<ResearchProjectDef>

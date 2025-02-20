@@ -7,12 +7,12 @@
   <!-- Hunter's Duster -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HuntersDuster</defName>
-    <description>Basic hunter's duster, fairly cheap to produce and provides a fair amount of protection.</description>
+    <description>A basic hunter's duster, this garment is fairly inexpensive to produce and offers a moderate level of protection.</description>
     <label>hunter's duster</label>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -80,12 +80,12 @@
 <!-- HUNTER DUSTER BLACK -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HuntersDusterBlack</defName>
-    <description>A dark version of the hunter's duster.</description>
+    <description>A dark version of a basic hunter's duster, this garment is fairly inexpensive to produce and offers a moderate level of protection.</description>
     <label>black hunter's duster</label>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -155,12 +155,12 @@
   <!-- ELITE HUNTER GARB -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_PowderkegGarb</defName>
-    <description>Elite hunter armor, designed using devilstrand to be resistant to fire, with armor plating sewn inside the duster.</description>
-    <label>elite hunter half plate</label>
+    <description>Elite hunter half-plate armor, designed using devilstrand to be resistant to fire, with armor plating sewn inside the duster.</description>
+    <label>elite hunter half-plate</label>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>PowderkegApparels</researchPrerequisite>
+      <researchPrerequisite>EliteHunterGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -229,12 +229,12 @@
   <!-- ARMORED ELITE HUNTER GARB-->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ArmoredPowderkegGarb</defName>
-    <description>Elite hunter armor, designed using devilstrand to be resistant to fire, with armor plating sewn inside the duster and pants.</description>
-    <label>elite hunter full plate</label>
+    <description>Elite hunter full-plate armor crafted from devilstrand for fire resistance, with armor plating sewn inside the duster and pants for enhanced protection.</description>
+    <label>elite hunter full-plate</label>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>PowderkegApparels</researchPrerequisite>
+      <researchPrerequisite>EliteHunterGear</researchPrerequisite>
       <displayPriority>215</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -304,7 +304,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ShadowWalkerCoat</defName>
     <label>shadow walker coat</label>
-    <description>A light weight coat worn by the mysterious shadow walkers. It provides excellent resistance to fire and heat damage, but has terrible resistance to sharp and blunt damage. The lightness of the coat compensates somewhat, providing the user with increased movement speed. It is also effective at insulating from extreme temperatures.</description>
+    <description>A lightweight coat that provides excellent resistance to fire and heat damage but has poor resistance to sharp and blunt damage. The coat's lightness compensates somewhat, offering the user increased movement speed. Additionally, it effectively insulates against extreme temperatures.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -353,7 +353,7 @@
       <EquipDelay>3</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>1.1</MoveSpeed>
+      <MoveSpeed>0.10</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -384,7 +384,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_ShadowWalkerFeatheredCoat</defName>
     <label>shadow walker feathered coat</label>
-    <description>A feathered variant of the shadow walker coat, which emulates the notorious shadow crow.</description>
+    <description>A lightweight, feathered coat that provides excellent resistance to fire and heat damage but has poor resistance to sharp and blunt damage. The coat's lightness compensates somewhat, offering the user increased movement speed. Additionally, it effectively insulates against extreme temperatures.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -433,7 +433,7 @@
       <EquipDelay>3</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>1.1</MoveSpeed>
+      <MoveSpeed>0.10</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -465,11 +465,11 @@
 <!-- COMMON ATTIRE -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CommonAttire</defName>
-    <description>A basic polo shirt, pants, vest, and belt combo attire.</description>
+    <description>Common hunter attire, consisting of a basic polo shirt, pants, vest, and belt combo.</description>
     <label>common hunter attire</label>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>208</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -534,11 +534,11 @@
   <!-- HUNTER GARB -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HunterGarb</defName>
-    <description>Commonly worn apparel by active hunters in the field.</description>
+    <description>This standard apparel, commonly worn by active hunters, includes a weather-resistant polo shirt, durable pants, a practical vest, and a robust belt for carrying essential gear.</description>
     <label>hunter garb</label>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>208</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -603,11 +603,11 @@
   <!-- HUNTER GARB BLACK -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_HunterGarbBlack</defName>
-    <description>A black variant of the hunter garb, now with protective plating for extra defense.</description>
+    <description>This black variant of standard apparel, commonly worn by active hunters, includes a weather-resistant polo shirt, durable pants, a practical vest, and a robust belt for carrying essential gear.</description>
     <label>black hunter garb</label>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>208</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -676,11 +676,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_HunterCap</defName>
     <label>hunter cap</label>
-    <description>A basic feathered tricorn, not much in providing protection, but it does protect the wearer's head from the sun and makes an ideal conversation piece.</description>
+    <description>"A basic feathered tricorn, while not offering much protection, shields the wearer's head from the sun and makes an ideal conversation piece.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -714,7 +714,7 @@
         <EquipDelay>1</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>1.10</SocialImpact>
+      <SocialImpact>0.10</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -743,11 +743,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_HunterFedora</defName>
     <label>hunter fedora</label>
-    <description>An iconic headgear favored by seasoned gun-wielding hunters, claiming that they could cover a single target with bullet holes faster while wearing the fedora.</description>
+    <description>An iconic fedora favored by seasoned gun-wielding hunters. Some enthusiasts even swear that it enhances their firing speed and accuracy, turning them into true sharpshooters.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -811,11 +811,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_HunterTricorn</defName>
     <label>hunter tricorne</label>
-    <description>Specially designed hunter's tricorn, allowing for increased perception and decreased aiming time.</description>
+    <description>A specially designed hunter's tricorn that sharpens perception and reduces aiming time, allowing hunters to spot their prey faster and strike with precision.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -879,11 +879,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_HunterTricornBlack</defName>
     <label>black hunter tricorne</label>
-    <description>A black variant of the hunter tricorn, a specially designed hunter's tricorn, allowing for increased perception and decreased aiming time.</description>
+    <description>A specially designed black variant of the hunter's tricorn that sharpens perception and reduces aiming time, allowing hunters to spot their prey faster and strike with precision.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -947,11 +947,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_SniperTopHat</defName>
     <label>sniper top hat</label>
-    <description>A fancy-looking top hat worn by experienced sharp shooters. Wearing it can grant the wearer a bonus to ranged weapon accuracy and social impact.</description>
+    <description>A fancy-looking top hat, cherished by experienced sharpshooters. Wearing it bestows a notable bonus to ranged weapon accuracy, while also boosting the wearer's social influence and presence.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -985,8 +985,8 @@
       <EquipDelay>1</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>	
-      <SocialImpact>1.15</SocialImpact>	
+      <ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>	
+      <SocialImpact>0.15</SocialImpact>	
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1015,11 +1015,11 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_HunterSombrero</defName>
     <label>hunter sombrero</label>
-    <description>A piece of headgear worn by elite hunters, granting increased perception and increased accuracy.</description>
+    <description>A distinguished piece of headgear worn by elite hunters, this hat enhances both perception and accuracy, making it an essential accessory for those seeking unparalleled precision in the field.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1053,8 +1053,8 @@
       <EquipDelay>1</EquipDelay>		
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>1.15</SocialImpact>	
-      <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>	
+      <SocialImpact>0.15</SocialImpact>	
+      <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>	
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1083,7 +1083,8 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Headgear_RogueHood</defName>
     <label>rogue hood</label>
-    <description>A dark hood worn by the shadow walkers.</description>
+    <description>a dark hood that shrouds the wearer in mystery, offering an air of stealth and secrecy. Ideal for those who prefer to operate in the shadows, it enhances one's ability to blend into the darkness and evade detection.</description>
+    </description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1133,7 +1134,7 @@
       <EquipDelay>1</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+      <Stealth>0.15</Stealth>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1162,7 +1163,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Headgear_PhantomHood</defName>
     <label>phantom hood</label>
-    <description>A dark hood and mask worn by the shadow walkers.</description>
+    <description>A sinister hood and mask, favored by elite hunters. This headgear enhances stealth and shrouds the wearer in mystery, offering an air of secrecy and intimidation that makes them a formidable presence in the shadows.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1212,6 +1213,8 @@
       <EquipDelay>1</EquipDelay>		
     </statBases>
     <equippedStatOffsets>
+      <Stealth>0.15</Stealth>
+      <SocialImpact>0.15</SocialImpact>	
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1240,7 +1243,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>Headgear_CrowFeatherHood</defName>
     <label>crow feathered hood</label>
-    <description>A specialy-made hood with feathered plumage and a plague doctor mask, which grants sufficient protection in the head, a slight bonus to consciousness, and a bonus immunity to disease and toxic hazards. This headgear is specialy worn by the infamous shadow crows.</description>
+    <description>A specially-made hood with feathered plumage and a plague doctor mask, granting the wearer enhanced immunity to disease and protection against toxic hazards.</description>
     <possessionCount>1</possessionCount>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1322,14 +1325,14 @@
     <defName>Handwear_HunterGloves</defName>
     <label>hunters gloves</label>
     <techLevel>Medieval</techLevel>
-    <description>A standard pair of gloves worn by hunters of the hunters covenant, which adjustable straps that can fit in any hand sizes, sufficiently armored, and provides a small decrease in aiming delay.</description>
+    <description>"A standard pair of gloves worn by hunters, featuring adjustable straps to fit any hand size. These gloves are sufficiently armored and provide a small decrease in aiming delay.</description>
     <graphicData>
       <texPath>Things/Apparels/Misc/Gloves/HunterGloves</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1396,14 +1399,14 @@
     <defName>Handwear_StakeDriverGloves</defName>
     <label>stake driver gloves</label>
     <techLevel>Medieval</techLevel>
-    <description>A pair of gloves with stake drivers attached in both sides, which can inflict deadly blast damage in melee range. These gloves were commonly worn by the powderkeg hunters on the hunters covenant.</description>
+    <description>A pair of gloves equipped with stake drivers on each hand, capable of inflicting deadly blast damage in melee range. Ideal for close combat encounters, these gloves turn the wearer into a formidable force.</description>
     <graphicData>
       <texPath>Things/Apparels/Misc/Gloves/StakeDriverGloves</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <recipeMaker>
-      <researchPrerequisite>PowderkegApparels</researchPrerequisite>
+      <researchPrerequisite>EliteHunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1476,14 +1479,14 @@
     <defName>FootWear_HunterBoots</defName>
     <label>hunter's boots</label>
     <techLevel>Medieval</techLevel>
-    <description>A standard pair of boots commonly worn by active hunters on the field, which grants bonus to movement speed when worn.</description>
+    <description>A standard pair of boots commonly worn by active hunters in the field. These boots grant a bonus to movement speed when worn, enhancing agility and performance.</description>
     <graphicData>
       <texPath>Things/Apparels/Misc/Boots/HunterBoots</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <recipeMaker>
-      <researchPrerequisite>HuntersApparel</researchPrerequisite>
+      <researchPrerequisite>HunterGear</researchPrerequisite>
       <displayPriority>100</displayPriority>
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
@@ -1517,7 +1520,7 @@
       <EquipDelay>2.5</EquipDelay>		
     </statBases>
     <equippedStatOffsets>      
-      <MoveSpeed>0.8</MoveSpeed>
+      <MoveSpeed>0.1</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -1548,7 +1551,7 @@
     <defName>Handwear_ShadowGuards</defName>
     <label>shadow guards</label>
     <techLevel>Medieval</techLevel>
-    <description>A pair of gloves worn by the shadow walkers, complete with wrist guards and mechanical enhancements that provides extra protection and bonus to ranged combat efficiency.</description>
+    <description>A pair of gloves, equipped with wrist guards and mechanical enhancements, providing extra protection and a bonus to ranged combat efficiency.</description>
     <graphicData>
       <texPath>Things/Apparels/ShadowWarriors_Apparels/Gloves/ShadowGuards</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1630,7 +1633,7 @@
     <defName>FootWear_ShadowStubs</defName>
     <label>shadow stubs</label>
     <techLevel>Medieval</techLevel>
-    <description>A pair of boots commonly worn by the shadow walkers, which grants bonus to movement speed when worn.</description>
+    <description>A pair of boots that grants a bonus to movement speed when worn, enhancing the wearer's agility and swiftness in any terrain.</description>
     <graphicData>
       <texPath>Things/Apparels/ShadowWarriors_Apparels/Boots/ShadowStubs</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1680,7 +1683,7 @@
       <EquipDelay>2.5</EquipDelay>	
     </statBases>
     <equippedStatOffsets>
-     <MoveSpeed>1.1</MoveSpeed>
+     <MoveSpeed>0.1</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
