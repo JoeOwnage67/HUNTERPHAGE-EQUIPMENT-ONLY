@@ -10,6 +10,7 @@ I have spent some time trying to rebalance this content. Any feedback is appreci
 
 I included a patch for Medieval Overhaul which makes the firearms that are available in Medieval fall into MO's research tree after gunpowder.
 
+![Image](https://i.imgur.com/QA4Q95T.png)
 ![Image](https://i.imgur.com/52DJZIb.png)
 ![Image](https://i.imgur.com/ydWYWXC.png)
 ![Image](https://i.imgur.com/idHv5TU.png)
