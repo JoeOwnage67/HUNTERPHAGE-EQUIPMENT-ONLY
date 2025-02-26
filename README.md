@@ -1,10 +1,14 @@
-Carves out Hunterphage Equipment from the rest of the mod. Some applicable things are now available in Medieval Tech Level. I did this because I think this content makes a decent transition between medieval and industrial.
+I have always felt that there is a weird gap between the end of the Medieval tech level and jumping into Industrial with autopistols and electricity. I thought that the content of this mod would make a nice transitional addition if you are going for a progression or generations style playthrough.
+
+If you like my stuff, feel free buy me a coffee (or a beer) at ko-fi.com/joeownage
+
+This mod carves out Hunterphage Equipment from the rest of the mod. Some applicable things are now available in Medieval Tech Level.
 
 Based on BlackMarket420s mod. All art assets and ideas belong to them. https://steamcommunity.com/sharedfiles/filedetails/?id=3030775138
 
-I have spent some time trying to rebalance the content of the mod. Any feedback is appreciated.
+I have spent some time trying to rebalance this content. Any feedback is appreciated. Here is my spreadsheet with the new weapon values and whatnot: https://drive.google.com/drive/folders/1fdjORxsnhstaxFlf4iZggwbFZtNCz-At?usp=drive_link
 
-I included a patch for Medieval Overhaul which makes the earliest firearms available at Medieval tech level, they require MO's gunpowder research.
+I included a patch for Medieval Overhaul which makes the firearms that are available in Medieval fall into MO's research tree after gunpowder.
 
 ![Image](https://i.imgur.com/52DJZIb.png)
 ![Image](https://i.imgur.com/ydWYWXC.png)
