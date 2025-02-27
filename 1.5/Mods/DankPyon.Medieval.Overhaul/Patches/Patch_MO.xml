@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Hunter Gear requires engineering-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "HunterGearCrafting"]/prerequisites</xpath>
+    <value>  
+        <prerequisites>
+          <li>DankPyon_Engineering</li>
+        </prerequisites>
+    </value>
+  </Operation>
+
+<!-- Shadowblades Research -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "ShadowBlades"]/prerequisites</xpath>
+    <value>       
+        <prerequisites>
+          <li>ShadowWalkerGear</li>
+          <li>HunterGearCrafting</li>
+          <li>DankPyon_MilitaryBlades</li>
+        </prerequisites>        
+    </value>
+  </Operation>
+
+  <!-- RudimentaryRifling Research-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "RudimentaryRifling"]/prerequisites</xpath>
+    <value>      
+        <prerequisites>
+          <li>HunterGearCrafting</li>
+          <li>DankPyon_Gunpowder</li>
+        </prerequisites>        
+    </value>
+  </Operation>
+
+<!-- flintlock armaments research -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "FlintlockArmaments"]/prerequisites</xpath>
+    <value>
+          <prerequisites>
+            <li>RudimentaryRifling</li>
+          </prerequisites>          
+      </value>
+  </Operation>
+
+    <!-- Ripperblades Research-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName = "RipperBlades"]/prerequisites</xpath>
+    <value>        
+          <prerequisites>
+            <li>RudimentaryRifling</li>
+            <li>DankPyon_MilitaryBlades</li>
+            <li>Batteries</li>
+          </prerequisites>
+    </value>
+  </Operation>
+
+
+
+</Patch>

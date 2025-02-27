@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Machining requires Rudimentary Rifling -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName = "Machining"]/prerequisites</xpath>
+    <value>
+        <li>RudimentaryRifling</li>           
+    </value>
+  </Operation>
+
+  <!-- Gunsmithing requires PercussionArmaments -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ResearchProjectDef[defName = "Gunsmithing"]/prerequisites</xpath>
+    <value>
+        <li>PercussionArmaments</li>           
+    </value>
+  </Operation>
+
+
+
+</Patch>
+
