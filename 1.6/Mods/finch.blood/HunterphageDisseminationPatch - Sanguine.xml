@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>    
+      
+      <!-- Add weaponTags to Knives -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowDagger" or defName="MeleeWeapon_Hunterphage_ShadowSaber" or defName="MeleeWeapon_Hunterphage_ShadowBane"]/weaponTags</xpath>
+        <value>
+          <li>DevDesigner_Blood_MeleeWeapon_Sword</li>
+          <li>DevDesigner_Blood_MeleeWeapon_ExecutionerGreatsword</li>
+          <li>DevDesigner_Blood_MeleeWeapon_Longsword</li>
+        </value>
+      </li>
+
+      <!-- Melee Weapons distribution -->
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="DevDesigner_KnightSanguin"]</xpath>
+        <value>
+          <weaponMoney>220~1100</weaponMoney>
+        </value>
+      </li>   
+    </operations>
+  </Operation>
+</Patch>

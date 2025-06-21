@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Research Tab -->
+  <ResearchTabDef>
+    <defName>HuntersWorkshop</defName>
+    <label>Hunters Workshop</label>
+  </ResearchTabDef>
+
+  <!-- Research Projects -->
+
+  <!-- MEDIEVAL -->
+
+  <ResearchProjectDef>
+    <defName>HunterGearCrafting</defName>
+    <label>Hunter Gear Crafting</label>
+    <techLevel>Medieval</techLevel>
+    <description>Unlock the Hunter's Workbench, where you can craft essential hunter gear and Daedalus Components. These components are a collection of gears and complex mechanical parts, crucial for building ingenious low-tech contraptions to enhance your colony's capabilities.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>PlateArmor</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>HunterGear</defName>
+    <label>Hunter's Apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture hunter-based apparel. Unlock the ability to craft specialized clothing and gear designed specifically for hunters, enhancing their efficiency and effectiveness in the field.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+   <ResearchProjectDef>
+    <defName>EliteHunterGear</defName>
+    <label>Elite Hunter's Apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture elite hunter apparel. Unlock the ability to craft specialized, armored clothing worn by elite hunters. This gear features plate armor sewn inside, enhancing both their protection and efficiency in the field.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ShadowWalkerGear</defName>
+    <label>Shadow Walker Gear</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture Shadow Walker gear. Unlock the ability to craft specialized clothing and gear worn by the elusive shadow walkers, enhancing their stealth and agility in the field.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ShadowBlades</defName>
+    <label>Shadow Blades</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture Shadow Blades, the weapons used by the elusive Shadow Walkers. Unlock the ability to craft these specialized weapons, enhancing the stealth and lethality of your colony's elite fighters.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>ShadowWalkerGear</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+ <ResearchProjectDef>
+    <defName>RudimentaryRifling</defName>
+    <label>Rudimentary Rifling</label>
+    <techLevel>Industrial</techLevel>
+    <description>Discover the rudimentary principles of rifled barrels, paving the way for crafting early firearms. These weapons offer improved range and damage compared to earlier melee weapons and bows, but lack the precision and firepower of more advanced weapons. A crucial step for any developing colony looking to enhance its defensive capabilities.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HunterGearCrafting</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FlintlockArmaments</defName>
+    <label>Flintlock Armaments</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft basic flintlock firearms. Unlock the ability to produce simple, yet reliable, flintlock weapons, providing your colony with an early form of ranged combat capability.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>RudimentaryRifling</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- INDUSTRIAL -->
+
+  <ResearchProjectDef>
+    <defName>PercussionArmaments</defName>
+    <label>Percussion Armaments</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft percussion firearms. Unlock the ability to produce more advanced firearms utilizing percussion cap technology, enhancing your colony's firepower and reliability in combat situations.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>FlintlockArmaments</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>RevolverArmaments</defName>
+    <label>Revolver Armaments</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft revolver-type firearms. Unlock the ability to produce reliable and versatile revolvers, enhancing your colony's firepower with these classic and effective weapons.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>PercussionArmaments</li>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Flamer</defName>
+    <label>Hand-held Flamers</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft a hand-held flame thrower.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>BiofuelRefining</li>
+      <li>ExoticWeaponry</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ExoticWeaponry</defName>
+    <label>Exotic Weaponry</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft some bizarre-looking firearms that are more effective in combat than they look.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>RevolverArmaments</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>HeavyWeaponry</defName>
+    <label>Heavy Weaponry</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to craft some devastating heavy weapons used by the powder keg hunters.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>ExoticWeaponry</li>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>RipperBlades</defName>
+    <label>Ripper Blades</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to manufacture deadly melee weapons using modified ripper chainsaw blades. Unlock the ability to craft these fearsome weapons, enhancing your colony's close-combat capabilities with brutal efficiency.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>RudimentaryRifling</li>
+      <li>LongBlades</li>
+      <li>Batteries</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+
+  <!--<ResearchProjectDef>
+    <defName>HuntersApparelBlack</defName>
+    <label>black hunter's apparel</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture a few black variant hunter-based apparels.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>HuntersApparel</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>-->
+
+  <!--<ResearchProjectDef>
+    <defName>BackPacks</defName>
+    <label>back packs</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to manufacture some backpacks.</description>
+    <baseCost>4500</baseCost>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>-->
+
+  <!--<ResearchProjectDef>
+    <defName>HunterMelee</defName>
+    <label>melee weapons</label>
+    <techLevel>Medieval</techLevel>
+    <description>Research a way to manufacture some melee weapons used by the hunterphages.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef> -->
+
+  <!--<ResearchProjectDef>
+    <defName>FrontierDefenses</defName>
+    <label>frontier defenses</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to build some sturdy defenses that can protect you from the early horrors of the rim.</description>
+    <baseCost>8500</baseCost>
+    <prerequisites>
+      <li>BasicHunterArmaments</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>BallistaTurret</defName>
+    <label>manned ballista turret</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to build a mannable ballista turret.</description>
+    <baseCost>9500</baseCost>
+    <prerequisites>
+      <li>FrontierDefenses</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CannonTurret</defName>
+    <label>manned cannon turret</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to build a mannable cannon turret, along with a way to manufacture some devious cannon shells.</description>
+    <baseCost>9500</baseCost>
+    <prerequisites>
+      <li>BallistaTurret</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>GatlingTurret</defName>
+    <label>manned gatling turret</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to build a mannable gatling turret.</description>
+    <baseCost>15500</baseCost>
+    <prerequisites>
+      <li>CannonTurret</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>-->
+
+  <!--<ResearchProjectDef>
+    <defName>Elixirz</defName>
+    <label>elixirs</label>
+    <techLevel>Industrial</techLevel>
+    <description>Research a way to brew some effective elixirs for combat, and other conveniences.</description>
+    <baseCost>15500</baseCost>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <tab>HuntersWorkshop</tab>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>6.00</researchViewY>
+  </ResearchProjectDef>-->
+
+</Defs>

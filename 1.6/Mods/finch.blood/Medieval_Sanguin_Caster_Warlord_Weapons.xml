@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Medieval_Sanguin_Caster_Warlord"]/weaponTags</xpath>
+    <value><li>Hunterphage_ShadowSaber</li></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Medieval_Sanguin_Caster_Warlord"]/weaponTags</xpath>
+    <value><li>Hunterphage_ShadowDagger</li></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Medieval_Sanguin_Caster_Warlord"]/weaponTags</xpath>
+    <value><li>Hunterphage_ShadowBane</li></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Medieval_Sanguin_Caster_Warlord"]/weaponTags</xpath>
+    <value><li>Hunterphage_HeavySawBlade</li></value>
+  </Operation>
+</Patch>

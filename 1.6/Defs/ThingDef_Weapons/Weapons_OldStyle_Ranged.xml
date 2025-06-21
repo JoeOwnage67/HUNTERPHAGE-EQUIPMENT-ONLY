@@ -1,0 +1,1962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tier 1 Firearms -->
+
+  <!-- Gun_Blunderbuss -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Blunderbuss</defName>
+    <label>blunderbuss</label>
+    <description>Originally wielded by pirates, the blunderbuss was effective in close-quarters combat due to its wide muzzle and scattering shot capabilities.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Blunderbuss</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToMake>12000</WorkToMake>
+        <Mass>4</Mass>
+        <AccuracyTouch>0.6</AccuracyTouch>
+        <AccuracyShort>0.75</AccuracyShort>
+        <AccuracyMedium>0.55</AccuracyMedium>
+        <AccuracyLong>0.35</AccuracyLong>
+        <RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>FlintlockArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>60</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Blunderbuss</defaultProjectile>
+        <warmupTime>3.8</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>14</range>
+        <soundCast>Shot_Blunderbuss</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>FlintlockBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+<!-- Bullet_Blunderbuss -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Blunderbuss</defName>
+    <label>Flintlock pellet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <li>
+          <def>TrueShot</def>
+          <chance>0.05</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_BlunderbussLongGun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_BlunderbussLongGun</defName>
+    <label>blunderbuss long gun</label>
+    <description>The long gun version of the blunderbuss, while lacking the range and precision of a flintlock rifle, was designed to fire multiple pellets at short to medium range. The blunderbuss was effective in close-quarters combat due to its wide muzzle and scattering shot capabilities.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Blunderbuss_Long</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1350</MarketValue>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>FlintlockArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BlunderbussLongGun</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>18</range>
+        <soundCast>Shot_Blunderbuss</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>FlintlockBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_BlunderbussLongGun -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BlunderbussLongGun</defName>
+    <label>Flintlock pellet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <li>
+          <def>TrueShot</def>
+          <chance>0.05</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_FlintlockRifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_FlintlockRifle</defName>
+    <label>flintlock rifle</label>
+    <description>One of the earliest firearms ever created, this weapon proved reliable for both hunting and colony defense due to its versatility and ease of use. Its robust design made it a valuable tool for early settlers in protecting their communities and securing food sources.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/FlintlockBasic1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>FlintlockArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>80</costStuffCount>	
+    <costList>
+      <WoodLog>30</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_FlintlockBasic</defaultProjectile>
+        <warmupTime>3.8</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
+        <range>18</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>FlintlockBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+<!-- Bullet_FlintlockBasic -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_FlintlockBasic</defName>
+    <label>flintlock bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>95</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.05</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_FlintlockLongGun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_FlintlockLongGun</defName>
+    <label>flintlock long gun</label>
+    <description>A long gun variant of one of the earliest firearms ever created, this weapon proved reliable for both hunting and colony defense due to its versatility and ease of use. Its robust design made it a valuable tool for early settlers in protecting their communities and securing food sources.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/FlintlockBasic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>27000</WorkToMake>
+      <Mass>9.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.48</AccuracyLong>
+      <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>FlintlockArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>4</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_FlintlockLongGun</defaultProjectile>
+        <warmupTime>3.6</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
+        <range>20</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>FlintlockBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_FlintlockLongGun -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_FlintlockLongGun</defName>
+    <label>flintlock bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>95</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.05</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Tier 2 Firearms -->
+
+  <!-- Percussion Basic -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PercussionRifle</defName>
+    <label>percussion rifle</label>
+    <description>An advanced iteration of flintlock firearms, this model utilizes percussion caps to ignite the black powder within the chamber. Due to the rudimentary rifling in the gun barrel, the projectile achieves a longer range, higher velocity, and enhanced armor penetration.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/PercussionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1100</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>2.9</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>PercussionArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
+    <costList>
+      <WoodLog>55</WoodLog>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PercussionBasic</defaultProjectile>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
+        <range>24</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>PercussionBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_PercussionBasic -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PercussionBasic</defName>
+    <label>sharp bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_PercussionBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>0.65</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.15</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_PercussionLongGun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PercussionLongGun</defName>
+    <label>percussion long gun</label>
+    <description>The long gun variant of the percussion rifle featured a longer barrel and rudimentary rifling, granting it extended range and improved accuracy over earlier flintlock rifles.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/PercussionRifle_LongGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>PercussionArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>110</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PercussionLongGun</defaultProjectile>
+        <warmupTime>3.2</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
+        <range>26</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>PercussionBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_PercussionLongGun -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PercussionLongGun</defName>
+    <label>sharp bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_PercussionBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>0.65</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.15</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Percussion scoped long gun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_ScopedPercussionLongGun</defName>
+    <label>scoped percussion long gun</label>
+    <description>The long gun variant of the percussion rifle featured a longer barrel and rudimentary rifling, granting it extended range and improved accuracy over earlier flintlock rifles. It is now outfitted with a scope, offering the wielder increased ranged weapon accuracy.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/PercussionRifle_Scoped</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>37000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>PercussionArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>7</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PercussionLongGun</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <!--<ticksBetweenBurstShots>5</ticksBetweenBurstShots>-->
+        <range>28</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>PercussionBasic</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Tier 3 Firearms -->
+
+  <!-- Gun_RevolvingRifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RevolvingRifle</defName>
+    <label>revolving rifle</label>
+    <description>A single-action percussion revolving rifle, equipped with a revolving cylinder that allows it to fire six projectiles in rapid succession, significantly outpacing the firing rate of earlier rifles.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/RevolverRifle_Basic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>RevolverArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>8</SimpleComponent>
+    </costList>    
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverTypeBasic</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>24</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RevolverTechElite</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_RevolverTypeBasic -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RevolverTypeBasic</defName>
+    <label>sharp bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_PercussionBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>0.65</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_RevolvingLongGun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RevolvingLongGun</defName>
+    <label>revolving long gun</label>
+    <description>A long gun variant of the revolving rifle, designed for increased accuracy. Equipped with a revolving cylinder, it can fire six projectiles in rapid succession, significantly outpacing the firing rate of earlier rifles.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/RevolverRifle_LongGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>RevolverArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+      <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>120</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>8</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverLongGun</defaultProjectile>
+        <warmupTime>3.3</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>70</ticksBetweenBurstShots>
+        <range>26</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RevolverTechElite</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_RevolverLongGun -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RevolverLongGun</defName>
+    <label>sharp bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Flintlock_PercussionBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>0.65</stoppingPower>
+      <speed>120</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Gun_ScopedRevolvingLongGun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_ScopedRevolvingLongGun</defName>
+    <label>scoped revolving long gun</label>
+    <description>A long gun variant of the revolving rifle, designed for increased accuracy. Equipped with a revolving cylinder, it can fire six projectiles in rapid succession, significantly outpacing the firing rate of earlier rifles. It is now outfitted with a scope, offering the wielder increased ranged weapon accuracy.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/PercussionRifle_Scoped</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium>
+      <AccuracyLong>0.62</AccuracyLong>
+      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>RevolverArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>130</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>   
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverLongGun</defaultProjectile>
+        <warmupTime>3.1</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>28</range>
+        <soundCast>Shot_FlintlockCritical</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RevolverTechElite</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Frontier revolver -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_FrontierRevolver</defName>
+    <label>frontier revolver</label>
+    <description>A simple yet reliable single-action percussion revolver, the frontier revolver is a common sight in the holsters of settlers across the rim. Unlike other revolver-type firearms, it boasts a slightly faster fire rate, reduced warm-up time, and delivers a powerful punch with each shot.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Revolver_SingleActionPercussion</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0, 1.0</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>RevolverArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>80</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>6</SimpleComponent>
+    </costList>       
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverFrontier</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+        <range>15</range>
+        <soundCast>Shot_RevolverFrontier</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>RevolverTechElite</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_RevolverFrontier -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RevolverFrontier</defName>
+    <label>revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Revolver_Projectilez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>0.7</stoppingPower>
+      <speed>90</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Flame sprayer -->
+  <!-- Hunters flame sprayer -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_HuntersFlamesprayer</defName>
+    <label>hunters flame sprayer</label>
+    <description>A hand-held flamethrower often used to incinerate insect hives and sangophages. Despite its compact size, this mini flamer can unleash a sea of fire at short range, engulfing targets in a blazing inferno within seconds.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/Flamer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0, 1.0</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Flamer</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <Chemfuel>95</Chemfuel>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>       
+    <verbs>
+      <li>
+        <verbClass>Verb_SpewFire</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>1.8</warmupTime>
+        <range>9.9</range>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <burstShotCount>7</burstShotCount>
+        <soundCast>Shot_MiniFlameblaster</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>FlamerOldStyle</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Exotic Weapons -->
+
+  <!-- Gun_SixBarrelMagnum -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SixBarrelMagnum</defName>
+    <label>six barrel magnum</label>
+    <description>An exotic variant of the frontier revolver, the six-barrel magnum features six gun barrels designed to fire simultaneously. It can deliver devastating damage in a single shot but requires time to reload.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/SixBarrelMagnum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0, 1.0</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>ExoticWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>75</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>      
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SixBarrelz</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>20</range>
+        <soundCast>Shot_FlintlockStrong</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>WeaponsBizarre</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+
+  <!-- Bullet_SixBarrelz -->  
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SixBarrelz</defName>
+    <label>magnum bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Revolver_Projectilez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>0.7</stoppingPower>
+      <speed>100</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+
+  <!-- Gun_TurretMagnum -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_TurretMagnum</defName>
+    <label>turret magnum</label>
+    <description>An exotic variant of the frontier revolver, the turret magnum features a custom cylinder capable of firing in ten-shot bursts before requiring reloading.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/TurretPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0, 1.0</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>ExoticWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>75</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>        
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_TenBarrelz</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>20</range>
+        <soundCast>Shot_FlintlockStrong</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>WeaponsBizarre</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Bullet_TenBarrelz -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TenBarrelz</defName>
+    <label>magnum bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Revolver_Projectilez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <stoppingPower>0.7</stoppingPower>
+      <speed>100</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Enouy Revolver -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_EnouyRevolver</defName>
+    <label>enouy revolver</label>
+    <description>An exotic variant of the frontier revolver, the Enouy revolver features eight revolver cylinders arranged in a revolver-like manner. This design allows for faster reload speed by rotating out the empty cylinder and rotating in a fresh one.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/EnouyRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0, 1.0</drawSize>
+    </graphicData>
+    <!--<equippedAngleOffset>45</equippedAngleOffset>-->
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>ExoticWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>95</costStuffCount>	
+    <costList>
+      <WoodLog>45</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>        
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverFrontier</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+        <range>20</range>
+        <soundCast>Shot_RevolverFrontier</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>WeaponsBizarre</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Gun_VolleyRifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_VolleyRifle</defName>
+    <label>volley rifle</label>
+    <description>An exotic, reimagined version of the blunderbuss, the volley rifle features seven rifled cylinders designed to fire simultaneously. This innovation vastly improves accuracy and range over the original blunderbuss, allowing it to reach distant targets with greater effectiveness.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Ranged/VolleyGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2, 1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Industrial</techLevel>
+    <soundInteract>Interact_Flintlock</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.73</AccuracyMedium>
+      <AccuracyLong>0.53</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>ExoticWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+     <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>100</costStuffCount>	
+    <costList>
+      <WoodLog>65</WoodLog>
+      <SimpleComponent>10</SimpleComponent>
+    </costList>      
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RevolverLongGun</defaultProjectile>
+        <warmupTime>3.7</warmupTime>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <range>22</range>
+        <soundCast>Shot_Blunderbuss</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>WeaponsBizarre</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponsOldstyle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Heavy Weapons : Ranged -->
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MarauderCannon</defName>
+    <label>marauder cannon</label>
+    <description>A hand held cannon that was once used in naval warships, now repurposed as a hand-held heavy weapon. It possess devastating firepower and incredible range, which allows the user to take-out groups of enemies at long distances.</description>
+    <tickerType>Normal</tickerType>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/Weapons/HeavyWeapons/HeavyCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.7, 1.7</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <Mass>25</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>HeavyWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>180</costStuffCount>	
+    <costList>
+      <WoodLog>120</WoodLog>
+      <SimpleComponent>20</SimpleComponent>
+    </costList>        
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>    
+    <weaponTags>
+      <li>HunterphageHeavyCannon</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>WeaponRangedHeavies</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <relicChance>0.5</relicChance>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MarauderCannon</defaultProjectile>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <isMortar>true</isMortar>
+        <warmupTime>7</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>18</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_HandHeldCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+      <li Class="CompProperties_Biocodable" />
+    </comps>
+  </ThingDef>
+
+  <!-- marauder bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MarauderCannon</defName>
+    <label>cannon ball</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Cannon_Proj</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1.5, 1.5</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>5.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <speed>70</speed>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!-- marauder gatling -->
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MarauderGatling</defName>
+    <label>marauder gatling gun</label>
+    <description>A hand-held, machine-powered Gatling gun. It is bulky and heavy to use, relying on a chemfuel-powered mechanism to fire 30 rounds of bullets at groups of enemies. Despite its cumbersome nature, it excels at providing crowd control and suppressive fire against any foes.</description>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Things/Weapons/HeavyWeapons/GatlingGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.10, 1.10</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <MarketValue>8500</MarketValue>
+      <Mass>20</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>HeavyWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>14</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>HunterWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.35</MoveSpeed>
+    </equippedStatOffsets>
+    <stuffCategories>	
+      <li>Metallic</li>
+    </stuffCategories>	
+    <costStuffCount>180</costStuffCount>	
+    <costList>
+      <WoodLog>120</WoodLog>
+      <SimpleComponent>20</SimpleComponent>
+      <Chemfuel>150</Chemfuel>
+    </costList>        
+    <weaponTags>
+      <li>HunterphageHeavyGatling</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>WeaponRangedHeavies</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <relicChance>0.5</relicChance>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MarauderGatling</defaultProjectile>
+        <warmupTime>5</warmupTime>
+        <range>18</range>
+        <burstShotCount>30</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_Blunderbuss</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Biocodable" />
+    </comps>
+  </ThingDef>
+
+  <!-- gatling bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MarauderGatling</defName>
+    <label>gatling bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Projectiles/Revolver_Projectilez</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>90</speed>
+      <extraDamages>
+        <!--<li>
+			<def>CriticalHit</def>
+			<amount>9999</amount>
+			<chance>0.05</chance>
+		</li>-->
+        <li>
+          <def>TrueShot</def>
+          <chance>0.20</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+</Defs>

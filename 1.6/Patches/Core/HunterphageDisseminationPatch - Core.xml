@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Replace MarketValue for SimpleComponent -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SimpleComponent"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>18</MarketValue>
+        </value>
+      </li>   
+      
+      <!-- Add weaponTags to Simple Guns -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss" or defName="Gun_BlunderbussLongGun" or defName="Gun_FlintlockRifle" or defName="Gun_FlintlockLongGun"]/weaponTags</xpath>
+        <value>
+          <li>SimpleGun</li>          
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Guns -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionRifle" or defName="Gun_PercussionLongGun" or defName="Gun_RevolvingRifle" or defName="Gun_RevolvingLongGun"]/weaponTags</xpath>
+        <value>
+          <li>Gun</li>          
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Revolvers -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_FrontierRevolver"]/weaponTags</xpath>
+        <value>
+          <li>Revolver</li>
+          <li>Gun</li>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Heavy Guns -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_MarauderCannon" or defName="Gun_MarauderGatling" or defName="Gun_HuntersFlamesprayer"]/weaponTags</xpath>
+        <value>
+          <li>HeavyGun</li>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Sniper Rifles -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun" or defName="Gun_ScopedRevolvingLongGun"]/weaponTags</xpath>
+        <value>
+          <li>SniperRifle</li>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Exotics -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_SixBarrelMagnum" or defName="Gun_TurretMagnum" or defName="Gun_EnouyRevolver" or defName="Gun_VolleyRifle"]/weaponTags</xpath>
+        <value>
+          <li></li>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Knives -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowDagger" or defName="MeleeWeapon_Hunterphage_ShadowSaber" or defName="MeleeWeapon_Hunterphage_ShadowBane"]/weaponTags</xpath>
+        <value>
+          <li>MedievalMeleeDecent</li>
+          <li>MedievalMeleeAdvanced</li>
+        </value>
+      </li>
+
+      <!-- Increase Rarity of weapons-->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss" or defName="Gun_BlunderbussLongGun" or defName="Gun_FlintlockRifle" or defName="Gun_FlintlockLongGun"]</xpath>
+        <value>
+          <generateCommonality>0.5</generateCommonality>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss" or defName="Gun_BlunderbussLongGun" or defName="Gun_FlintlockRifle" or defName="Gun_FlintlockLongGun"]</xpath>
+        <value>
+          <generateAllowChance>0.1</generateAllowChance>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun" or defName="Gun_ScopedRevolvingLongGun"]</xpath>
+        <value>
+          <generateCommonality>0.05</generateCommonality>
+        </value>
+      </li>
+
+      <!-- Reduce costs for all ranged weapons -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>15</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>45</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_BlunderbussLongGun"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>15</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_BlunderbussLongGun"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>35</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockRifle"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>15</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockRifle"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>30</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockLongGun"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>15</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockLongGun"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>35</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionRifle"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>20</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionRifle"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>35</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionLongGun"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>20</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionLongGun"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>35</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>20</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>40</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingRifle"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>20</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingRifle"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>40</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingLongGun"]/costList/WoodLog</xpath>
+        <value>
+          <WoodLog>20</WoodLog>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingLongGun"]/costStuffCount</xpath>
+        <value>
+          <costStuffCount>40</costStuffCount>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Gun_ScopedRevolvingLongGun"]/costList/WoodLog</xpath>
+      <value>
+          <WoodLog>20</WoodLog>
+      </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_ScopedRevolvingLongGun"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>45</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_FrontierRevolver"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>15</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_FrontierRevolver"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>25</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_HuntersFlamesprayer"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>15</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_HuntersFlamesprayer"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>30</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_SixBarrelMagnum"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>15</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_SixBarrelMagnum"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>25</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_TurretMagnum"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>15</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_TurretMagnum"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>25</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_EnouyRevolver"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>15</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_EnouyRevolver"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>30</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_VolleyRifle"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>20</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_VolleyRifle"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>35</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_MarauderCannon"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>40</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_MarauderCannon"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>60</costStuffCount>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_MarauderGatling"]/costList/WoodLog</xpath>
+          <value>
+              <WoodLog>40</WoodLog>
+          </value>
+      </li>
+      <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_MarauderGatling"]/costStuffCount</xpath>
+          <value>
+              <costStuffCount>60</costStuffCount>
+          </value>
+      </li>    
+
+      <!-- Update MarketValue for Shadow Dagger to 450 -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowDagger"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>450</MarketValue>
+        </value>
+      </li>
+
+      <!-- Update MarketValue for Shadow Saber to 800 -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowSaber"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>800</MarketValue>
+        </value>
+      </li>
+
+      <!-- Update MarketValue for Shadow Bane to 700 -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowBane"]/statBases/MarketValue</xpath>
+        <value>
+          <MarketValue>700</MarketValue>
+        </value>
+      </li>
+
+      <!-- Shadow Dagger: Add generate settings -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowDagger"]</xpath>
+        <value>
+          <generateCommonality>0.7</generateCommonality>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowDagger"]</xpath>
+        <value>
+          <generateAllowChance>0.6</generateAllowChance>
+        </value>
+      </li>
+
+      <!-- Shadow Saber: Add generate settings -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowSaber"]</xpath>
+        <value>
+          <generateCommonality>0.7</generateCommonality>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowSaber"]</xpath>
+        <value>
+          <generateAllowChance>0.6</generateAllowChance>
+        </value>
+      </li>
+
+      <!-- Shadow Bane: Add generate settings -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowBane"]</xpath>
+        <value>
+          <generateCommonality>0.7</generateCommonality>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Hunterphage_ShadowBane"]</xpath>
+        <value>
+          <generateAllowChance>0.6</generateAllowChance>
+        </value>
+      </li>
+
+      <!-- Mask for Guns -->
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_BlunderbussLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockRifle"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionRifle"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingRifle"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_RevolvingLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedRevolvingLongGun"]/graphicData</xpath>
+        <value>
+          <shaderType>CutoutComplex</shaderType>
+        </value>
+      </li>
+
+      <!-- Original mod doesn't use the correct texture -->
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedRevolvingLongGun"]/graphicData/texPath</xpath>
+        <value>
+          <texPath>Things/Weapons/Ranged/RevolverRifle_Scoped</texPath>
+        </value>
+      </li>
+
+      <!-- Balancing -->
+
+      <li Class="PatchOperationReplace">
+    	<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponMoney</xpath>
+    	<value>
+     	  <weaponMoney>300~550</weaponMoney>
+  	</value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+    	<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+   	<value>
+    	  <li>SimpleGun</li>
+ 	</value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+    	<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+   	<value>
+    	  <li>SimpleGun</li>
+ 	</value>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

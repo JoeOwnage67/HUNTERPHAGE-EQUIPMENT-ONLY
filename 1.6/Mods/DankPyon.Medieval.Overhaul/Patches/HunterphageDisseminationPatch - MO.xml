@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+    
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName = "DankPyon_Medieval_Arbalester"]</xpath>
+        <value>
+          <weaponMoney>200~500</weaponMoney>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Simple Guns -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Blunderbuss" or defName="Gun_BlunderbussLongGun" or defName="Gun_FlintlockRifle" or defName="Gun_FlintlockLongGun"]/weaponTags</xpath>
+        <value>          
+          <li>DankPyon_Arbalest</li>
+          <li>DankPyon_Arbelest</li>
+          <!-- <li>DankPyon_Crossbow</li> -->
+          <li>DankPyon_Warbow</li>
+        </value>
+      </li>
+
+      <!-- Add weaponTags to Guns -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PercussionRifle" or defName="Gun_PercussionLongGun" or defName="Gun_RevolvingRifle" or defName="Gun_RevolvingLongGun"]/weaponTags</xpath>
+        <value>
+          <li>DankPyon_Arbelest</li>
+        </value>
+      </li>   
+
+      <!-- Add weaponTags to Sniper Rifles -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ScopedPercussionLongGun" or defName="Gun_ScopedRevolvingLongGun"]/weaponTags</xpath>
+        <value>          
+          <li>DankPyon_Arbalest</li>
+          <li>DankPyon_Arbelest</li>
+        </value>
+      </li>
+
+      <!-- Melee Weapons distribution -->
+
+      <!-- Adjust High Priest Melee weaponMoney to range 450~900 -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="DanyPyon_Cultist_HighPriest_Melee"]</xpath>
+        <value>
+          <weaponMoney>450~900</weaponMoney>
+        </value>
+      </li>
+
+      <!-- Adjust High Priest Melee weaponMoney to range 450~900 
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="DanyPyon_Cultist_HighPriest_Melee"]</xpath>
+        <value>
+          <weaponMoney>450~900</weaponMoney>
+        </value>
+      </li>-->
+    </operations>
+  </Operation>
+</Patch>

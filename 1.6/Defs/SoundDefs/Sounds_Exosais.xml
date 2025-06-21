@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>NewBlunderbussShot</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ConSwap/Weapon/Blunderbuss</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>55.0</min>
+          <max>65.0</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>NewVictorianShot</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ConSwap/Weapon/VictorianGun</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>55.0</min>
+          <max>65.0</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>NewRevolverShot</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>ConSwap/Weapon/Revolver</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>45.0</min>
+          <max>55.0</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9</min>
+          <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

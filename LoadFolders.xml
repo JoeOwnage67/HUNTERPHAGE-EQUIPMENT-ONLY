@@ -8,4 +8,13 @@
 		<li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mods/DankPyon.Medieval.Overhaul</li>		
 	</v1.5>
 
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+        <li>Sounds</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/DankPyon.Medieval.Overhaul</li>
+		<li IfModActive="ocarina.sanguophage.faction">1.6/Mods/ocarina.sanguophage.faction</li>
+    	<li IfModActive="finch.blood">1.6/Mods/finch.blood</li>		
+	</v1.6>
+
 </loadFolders>

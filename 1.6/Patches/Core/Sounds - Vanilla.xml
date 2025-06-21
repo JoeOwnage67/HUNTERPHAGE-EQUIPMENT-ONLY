@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Replace soundCast for Gun_Blunderbuss with new blunderbuss sound -->
+      <li Class="PatchOperationReplace">
+    	<xpath>Defs/ThingDef[defName="Gun_Blunderbuss" or defName="Gun_BlunderbussLongGun"]/verbs/li/soundCast</xpath>
+    	<value>
+      	  <soundCast>NewBlunderbussShot</soundCast>
+        </value>
+      </li>
+
+      <!-- Replace soundCast for all other rifles-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_FlintlockRifle" or defName="Gun_FlintlockLongGun" or defName="Gun_PercussionRifle" or defName="Gun_PercussionLongGun" or defName="Gun_RevolvingRifle" or defName="Gun_RevolvingLongGun" or defName="Gun_FrontierRevolver" or defName="Gun_ScopedPercussionLongGun" or defName="Gun_ScopedRevolvingLongGun"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>NewVictorianShot</soundCast>
+        </value>
+      </li>
+
+      <!-- Replace soundCast for all revolvers-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_EnouyRevolver" or defName="Gun_FrontierRevolver" or defName="Gun_TurretMagnum" or defName="Gun_SixBarrelMagnum"]/verbs/li/soundCast</xpath>
+        <value>
+          <soundCast>NewRevolverShot</soundCast>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
